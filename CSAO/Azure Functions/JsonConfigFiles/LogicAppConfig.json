@@ -1,0 +1,46 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateTriggerIp": "true",
+      "remediateLogIp": "true",
+      "triggerAccessOption": "onlyLogicApps",
+      "triggerWhiteListIps": [],
+      "logsWhiteListIps": []
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateTriggerIp": "false",
+      "remediateLogIp": "false",
+      "triggerAccessOption": "specificIps",
+      "triggerWhiteListIps": [
+        "10.1.1.10-10.1.1.20",
+        "20.1.1.1/28"
+      ],
+      "logsWhiteListIps": [
+        "1.1.1.10-1.1.1.20",
+        "2.1.1.1/28"
+      ]
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateTriggerIp": "false",
+      "remediateLogIp": "false",
+      "triggerAccessOption": "anyIps",
+      "triggerWhiteListIps": [],
+      "logsWhiteListIps": []
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateTriggerIp": "false",
+    "remediateLogIp": "false",
+    "triggerAccessOption": "anyIps",
+    "triggerWhiteListIps": [],
+    "logsWhiteListIps": []
+  }
+}

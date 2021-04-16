@@ -1,0 +1,28 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateDiagnosticSetting": "true",
+      "remediationMMA": "false"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateDiagnosticSetting": "false",
+      "remediationMMA": "false"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateDiagnosticSetting": "false",
+      "remediationMMA": "false"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateDiagnosticSetting": "false",
+    "remediationMMA": "false"
+  }
+}

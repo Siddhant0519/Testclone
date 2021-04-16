@@ -1,0 +1,81 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateHttps": "true",
+      "remedaiteWAF": "true",
+      "enableFirewall": "true",
+      "remediateFirewallMode": "true",
+      "remediateRuleSet": "true",
+      "remediateFrontendIpConfigurations": "true",
+      "prefixFrontendIpName": "private"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateHttps": "false",
+      "remedaiteWAF": "true",
+      "enableFirewall": "true",
+      "remediateFirewallMode": "true",
+      "remediateRuleSet": "true",
+      "remediateFrontendIpConfigurations": "false",
+      "prefixFrontendIpName": "private"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateHttps": "false",
+      "remedaiteWAF": "true",
+      "enableFirewall": "true",
+      "remediateFirewallMode": "true",
+      "remediateRuleSet": "true",
+      "remediateFrontendIpConfigurations": "false",
+      "prefixFrontendIpName": "private"
+    },
+    {
+      "tagValue": "testAG1",
+      "auditMode": "false",
+      "remediateHttps": "true",
+      "remedaiteWAF": "false",
+      "enableFirewall": "false",
+      "remediateFirewallMode": "false",
+      "remediateRuleSet": "false",
+      "remediateFrontendIpConfigurations": "false",
+      "prefixFrontendIpName": "private"
+    },
+    {
+      "tagValue": "testAG2",
+      "auditMode": "false",
+      "remediateHttps": "false",
+      "remedaiteWAF": "true",
+      "enableFirewall": "true",
+      "remediateFirewallMode": "true",
+      "remediateRuleSet": "true",
+      "remediateFrontendIpConfigurations": "false",
+      "prefixFrontendIpName": "private"
+    },
+    {
+      "tagValue": "testAG3",
+      "auditMode": "false",
+      "remediateHttps": "false",
+      "remedaiteWAF": "false",
+      "enableFirewall": "false",
+      "remediateFirewallMode": "false",
+      "remediateRuleSet": "false",
+      "remediateFrontendIpConfigurations": "true",
+      "prefixFrontendIpName": "private"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateHttps": "false",
+    "remedaiteWAF": "true",
+    "enableFirewall": "true",
+    "remediateFirewallMode": "true",
+    "remediateRuleSet": "true",
+    "remediateFrontendIpConfigurations": "false",
+    "prefixFrontendIpName": "private"
+  }
+}

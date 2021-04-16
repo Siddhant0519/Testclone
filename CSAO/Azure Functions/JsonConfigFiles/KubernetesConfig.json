@@ -1,0 +1,32 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateAutoScaling": "true",
+      "minCount": "1",
+      "maxCount": "3"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateAutoScaling": "true",
+      "minCount": "3",
+      "maxCount": "6"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateAutoScaling": "true",
+      "minCount": "1",
+      "maxCount": "3"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateAutoScaling": "true",
+    "minCount": "1",
+    "maxCount": "3"
+  }
+}

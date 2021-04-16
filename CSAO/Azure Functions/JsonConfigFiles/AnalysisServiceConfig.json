@@ -1,0 +1,60 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateBackup": "true",
+      "remediateFirewall": "true",
+      "remediatePowerBIService": "true",
+      "allowPowerBIService": "true",
+      "remediateIp": "true",
+      "whiteListIps": []
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateBackup": "false",
+      "remediateFirewall": "false",
+      "remediatePowerBIService": "true",
+      "allowPowerBIService": "false",
+      "remediateIp": "false",
+      "whiteListIps": [
+        {
+          "firewallRuleName": "testfirst",
+          "rangeStart": "1.2.3.4",
+          "rangeEnd": "5.6.7.8"
+        },
+        {
+          "firewallRuleName": "testsecond",
+          "rangeStart": "9.10.11.12",
+          "rangeEnd": "13.14.15.16"
+        },
+        {
+          "firewallRuleName": "testthird",
+          "rangeStart": "17.18.19.20",
+          "rangeEnd": "21.22.23.24"
+        }
+      ]
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateBackup": "false",
+      "remediateFirewall": "false",
+      "remediatePowerBIService": "true",
+      "allowPowerBIService": "false",
+      "remediateIp": "false",
+      "whiteListIps": []
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateBackup": "false",
+    "remediateFirewall": "false",
+    "remediatePowerBIService": "false",
+    "allowPowerBIService": "false",
+    "remediateIp": "false",
+    "whiteListIps": []
+  }
+}

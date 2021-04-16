@@ -1,0 +1,7 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=pratikstorageacc;AccountKey=yWsTUutYKe8oWWNpJqZnXulvP+GLXZvMXV44+jNAOXeHaiMui4mXUDU325hIP0WhqWx3lbKxi93t+U5bKbuYPA==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+  }
+}

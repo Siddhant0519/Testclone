@@ -1,0 +1,266 @@
+{
+  "appGateway": {
+    "sslcert": {
+      "msi": "",
+      "kvcerturi": ""
+    },
+    "firewall": {
+      "mode": "Prevention",
+      "ruleSetType": "OWASP",
+      "ruleSetVersion": "3.0"
+    }
+  },
+  "anaylsisService": {
+    "BackupSettings": {
+      "storageAccount": {
+        "id": ""
+      }
+    }
+  },
+  "appService": {
+    "stackVersion": {
+      "linuxFxVersion": {
+        "ruby": "RUBY|2.5.5",
+        "node": "NODE|10-lts",
+        "php": "PHP|7.3",
+        "dotnetcore": "DOTNETCORE|2.1",
+        "java": "TOMCAT|8.5-java11",
+        "python": "PYTHON|3.6",
+        "staticsite": "STATICSITE|1.0"
+      },
+      "netFrameworkVersion": "v4.0",
+      "phpVersion": "7.2",
+      "pythonVersion": "3.4",
+      "javaVersion": "1.7.0_51",
+      "javaContainer": "TOMCAT",
+      "javaContainerVersion": "7.0.50"
+    }
+  },
+  "diagnostics": {
+    "logAnalyticsWorkspace": [
+      {
+        "region": "eastus",
+        "workspaceId": ""
+      },
+      {
+        "region": "other",
+        "workspaceId": ""
+      }
+    ],
+    "eventHub": [
+      {
+        "region": "eastus",
+        "namespaceId": "",
+        "eventHubName": "diaglogs",
+        "authorizationKeyName": "RootManageSharedAccessKey"
+      },
+      {
+        "region": "eastus2",
+        "namespaceId": "",
+        "eventHubName": "diaglogs",
+        "authorizationKeyName": "RootManageSharedAccessKey"
+      },
+      {
+        "region": "other",
+        "namespaceId": "",
+        "eventHubName": "diaglogs",
+        "authorizationKeyName": "RootManageSharedAccessKey"
+      }
+    ]
+  },
+  "sqlManagedInstance": {
+    "backupRetentionDays": "30",
+    "VulnerabilityAssessmentSettings": {
+      "storageAccounts": [
+        {
+          "subscriptionId": "",
+          "resourceGroup": "RemediationRG",
+          "region": "eastus",
+          "name": "sqlvulassesseastus"
+        },
+        {
+          "subscriptionId": "",
+          "resourceGroup": "vulnerabilityassessment",
+          "region": "eastus2",
+          "name": "sqlvulnassesseastus2"
+        }
+      ],
+      "ScanReportEmails": ""
+    },
+    "AdvancedThreatProtection": {
+      "ScanReportEmails": ""
+    }
+  },
+  "sql": {
+    "VulnerabilityAssessmentSettings": {
+      "storageAccounts": [
+        {
+          "subscriptionId": "",
+          "resourceGroup": "RemediationRG",
+          "region": "eastus",
+          "name": "sqlvulassesseastus"
+        },
+        {
+          "subscriptionId": "",
+          "resourceGroup": "vulnerabilityassessment",
+          "region": "eastus2",
+          "name": "sqlvulnassesseastus2"
+        }
+      ],
+      "ScanReportEmails": ""
+    },
+    "AdvancedThreatProtection": {
+      "ScanReportEmails": ""
+    },
+    "sqlAdmin": {
+      "properties": {
+        "administratorType": "ActiveDirectory",
+        "login": "AzureSQLAdmins",
+        "sid": "",
+        "tenantId": ""
+      }
+    },
+    "backupSettings": {
+      "shorttermretentionDays": "35",
+      "longtermretentionDays": {
+        "weeklyBackup": {
+          "enable": "true",
+          "periodType": "weeks",
+          "retentionValue": "7"
+        },
+        "monthlyBackup": {
+          "enable": "true",
+          "periodType": "months",
+          "retentionValue": "10"
+        },
+        "yearlyBackup": {
+          "enable": "true",
+          "periodType": "years",
+          "retentionValue": "2"
+        },
+        "weekoftheYear": "1"
+      }
+    }
+  },
+  "postgreSql": {
+    "sqlAdmin": {
+      "properties": {
+        "administratorType": "ActiveDirectory",
+        "login": "AzureSQLAdmins",
+        "sid": "",
+        "tenantId": ""
+      }
+    }
+  },
+  "mySQL": {
+    "sqlAdmin": {
+      "properties": {
+        "administratorType": "ActiveDirectory",
+        "login": "AzureSQLAdmins",
+        "sid": "",
+        "tenantId": ""
+      }
+    }
+  },
+  "dnsZones": {
+    "subscriptionFilter": "false",
+    "subscriptions": [],
+    "whitelistzones": []
+  },
+  "securityCenter": {
+    "enableRemediation": "true",
+    "subscriptions": [
+      {
+        "id": "",
+        "auditMode": "false",
+        "email": "test@abc.com",
+        "phone": "1234567890",
+        "alertNotifications": "On",
+        "alertsToAdmins": "On",
+        "autoProvisoning": "On",
+        "virtualMachines": "Standard",
+        "sqlServers": "Standard",
+        "appServices": "Standard",
+        "storageAccounts": "Standard",
+        "sqlServerVirtualMachines": "Free",
+        "kubernetesService": "Free",
+        "containerRegistry": "Free",
+        "keyVaults": "Free",
+        "defaultWorkspaceid": ""
+      },
+      {
+        "id": "default",
+        "auditMode": "false",
+        "email": "test1@abc.com",
+        "phone": "0987654321",
+        "alertNotifications": "On",
+        "alertsToAdmins": "On",
+        "autoProvisoning": "On",
+        "virtualMachines": "Standard",
+        "sqlServers": "Standard",
+        "appServices": "Standard",
+        "storageAccounts": "Standard",
+        "sqlServerVirtualMachines": "Standard",
+        "kubernetesService": "Standard",
+        "containerRegistry": "Standard",
+        "keyVaults": "Standard",
+        "defaultWorkspaceid": ""
+      }
+    ]
+  },
+  "controlVnet": {
+    "virtualNetworks": []
+  },
+  "nsgFlowLogs": {
+    "storageAccount": [
+      {
+        "region": "eastus",
+        "id": ""
+      },
+      {
+        "region": "eastus2",
+        "id": ""
+      }
+    ]
+  },
+  "virtualMachine": {
+    "storageAccount": []
+  },
+  "generalSetting": {
+    "storageLogStreamBatchSize": "10",
+    "controlVNetCIDR": "10.0.0.0/28",
+    "currentVersion": "1.0",
+    "resourceTagName": "guardrails",
+    "contactTagName": "guardrailsContact",
+    "includeNewSubscription": "false",
+    "retryCount": 5,
+    "retryDelayInSeconds": 60,
+    "subscriptionMonitorCronJob": "0 */5 * * * *",
+    "eventHubKeysCronJob": "0 */5 * * * *",
+    "activeDirectoryCronJob": "0 */5 * * * *",
+    "guardrailsHealthCheckCronJob": "0 */30 * * * *",
+    "storageLogCronJob": "0 0 */2 * * *",
+    "queueReaderIntervalInMinutes": "10",
+    "emailAPIURL": "",
+    "emailAPIKey": "",
+    "remediationLogDesitnation": {
+      "cosmosDB": "true",
+      "appInsights": "true"
+    },
+    "diagnosticsLogDesitnation": {
+      "LogAnalytics": "true",
+      "EventHub": "true"
+    },
+    "databricksRgRegex": "(?i)databricks-rg*",
+    "databricksTags": [
+      {
+        "tagName": "application",
+        "tagValue": "databricks"
+      },
+      {
+        "tagName": "databricks-environment",
+        "tagValue": "true"
+      }
+    ]
+  }
+}

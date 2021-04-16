@@ -1,0 +1,297 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "allowAzureServiceIPRange",
+    "configuration",
+    "defaultConfig"
+  ],
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "allowAzureServiceIPRange": {
+      "$id": "#/properties/allowAzureServiceIPRange",
+      "type": "string",
+      "title": "The allowAzureServiceIPRange schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "attachToControlVNet",
+          "remediateAllowAzureServices",
+          "allowAzureServices",
+          "remediateIp",
+          "whiteListIps",
+          "addADAdmin",
+          "remediateRetentionDays",
+          "retentionDays",
+          "remediateSSL",
+          "sslValue",
+          "remediateTLS",
+          "minimumTLS",
+          "investigationRequired"
+        ],
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "attachToControlVNet": {
+            "$id": "#/properties/configuration/items/properties/attachToControlVNet",
+            "type": "string",
+            "title": "The attachToControlVNet schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateAllowAzureServices": {
+            "$id": "#/properties/configuration/items/properties/remediateAllowAzureServices",
+            "type": "string",
+            "title": "The remediateAllowAzureServices schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "allowAzureServices": {
+            "$id": "#/properties/configuration/items/properties/allowAzureServices",
+            "type": "string",
+            "title": "The allowAzureServices schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateIp": {
+            "$id": "#/properties/configuration/items/properties/remediateIp",
+            "type": "string",
+            "title": "The remediateIp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "whiteListIps": {
+            "$id": "#/properties/configuration/items/properties/whiteListIps",
+            "type": "array",
+            "title": "The whiteListIps schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true
+          },
+          "addADAdmin": {
+            "$id": "#/properties/configuration/items/properties/addADAdmin",
+            "type": "string",
+            "title": "The addADAdmin schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateRetentionDays": {
+            "$id": "#/properties/configuration/items/properties/remediateRetentionDays",
+            "type": "string",
+            "title": "The remediateRetentionDays schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "retentionDays": {
+            "$id": "#/properties/configuration/items/properties/retentionDays",
+            "type": "string",
+            "title": "The retentionDays schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateSSL": {
+            "$id": "#/properties/configuration/items/properties/remediateSSL",
+            "type": "string",
+            "title": "The remediateSSL schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "sslValue": {
+            "$id": "#/properties/configuration/items/properties/sslValue",
+            "type": "string",
+            "title": "The sslValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateTLS": {
+            "$id": "#/properties/configuration/items/properties/remediateTLS",
+            "type": "string",
+            "title": "The remediateTLS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "minimumTLS": {
+            "$id": "#/properties/configuration/items/properties/minimumTLS",
+            "type": "string",
+            "title": "The minimumTLS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "attachToControlVNet",
+        "remediateAllowAzureServices",
+        "allowAzureServices",
+        "remediateIp",
+        "whiteListIps",
+        "addADAdmin",
+        "remediateRetentionDays",
+        "retentionDays",
+        "remediateSSL",
+        "sslValue",
+        "remediateTLS",
+        "minimumTLS",
+        "investigationRequired"
+      ],
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "attachToControlVNet": {
+          "$id": "#/properties/defaultConfig/properties/attachToControlVNet",
+          "type": "string",
+          "title": "The attachToControlVNet schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateAllowAzureServices": {
+          "$id": "#/properties/defaultConfig/properties/remediateAllowAzureServices",
+          "type": "string",
+          "title": "The remediateAllowAzureServices schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "allowAzureServices": {
+          "$id": "#/properties/defaultConfig/properties/allowAzureServices",
+          "type": "string",
+          "title": "The allowAzureServices schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateIp": {
+          "$id": "#/properties/defaultConfig/properties/remediateIp",
+          "type": "string",
+          "title": "The remediateIp schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "whiteListIps": {
+          "$id": "#/properties/defaultConfig/properties/whiteListIps",
+          "type": "array",
+          "title": "The whiteListIps schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        },
+        "addADAdmin": {
+          "$id": "#/properties/defaultConfig/properties/addADAdmin",
+          "type": "string",
+          "title": "The addADAdmin schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateRetentionDays": {
+          "$id": "#/properties/defaultConfig/properties/remediateRetentionDays",
+          "type": "string",
+          "title": "The remediateRetentionDays schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "retentionDays": {
+          "$id": "#/properties/defaultConfig/properties/retentionDays",
+          "type": "string",
+          "title": "The retentionDays schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateSSL": {
+          "$id": "#/properties/defaultConfig/properties/remediateSSL",
+          "type": "string",
+          "title": "The remediateSSL schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "sslValue": {
+          "$id": "#/properties/defaultConfig/properties/sslValue",
+          "type": "string",
+          "title": "The sslValue schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateTLS": {
+          "$id": "#/properties/defaultConfig/properties/remediateTLS",
+          "type": "string",
+          "title": "The remediateTLS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "minimumTLS": {
+          "$id": "#/properties/defaultConfig/properties/minimumTLS",
+          "type": "string",
+          "title": "The minimumTLS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

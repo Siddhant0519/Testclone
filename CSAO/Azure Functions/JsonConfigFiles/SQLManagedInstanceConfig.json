@@ -1,0 +1,64 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateLogBackup": "true",
+      "remediateAdvancedSecurity": "true",
+      "remediatePeriodicScans": "true",
+      "emailSubscriptionAdmins": "true",
+      "addADAdmin": "true",
+      "enableTDE": "true",
+      "remdiatePublicEndpoint": "true",
+      "remediateTLS": "true",
+      "minimumTLS": "1.0",
+      "remediateConnectionType": "true",
+      "connectionType": "Proxy"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateLogBackup": "true",
+      "remediateAdvancedSecurity": "true",
+      "remediatePeriodicScans": "true",
+      "emailSubscriptionAdmins": "true",
+      "addADAdmin": "true",
+      "enableTDE": "true",
+      "remdiatePublicEndpoint": "false",
+      "remediateTLS": "false",
+      "minimumTLS": "1.0",
+      "remediateConnectionType": "false",
+      "connectionType": "Proxy"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateLogBackup": "true",
+      "remediateAdvancedSecurity": "true",
+      "remediatePeriodicScans": "true",
+      "emailSubscriptionAdmins": "true",
+      "addADAdmin": "true",
+      "enableTDE": "true",
+      "remdiatePublicEndpoint": "false",
+      "remediateTLS": "false",
+      "minimumTLS": "1.0",
+      "remediateConnectionType": "false",
+      "connectionType": "Proxy"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateLogBackup": "true",
+    "remediateAdvancedSecurity": "true",
+    "remediatePeriodicScans": "true",
+    "emailSubscriptionAdmins": "true",
+    "addADAdmin": "true",
+    "enableTDE": "true",
+    "remdiatePublicEndpoint": "false",
+    "remediateTLS": "false",
+    "minimumTLS": "1.0",
+    "remediateConnectionType": "false",
+    "connectionType": "Proxy"
+  }
+}

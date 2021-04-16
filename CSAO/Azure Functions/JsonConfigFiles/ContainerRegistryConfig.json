@@ -1,0 +1,31 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateIp": "true",
+      "whiteListIps": []
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateIp": "false",
+      "whiteListIps": [
+        "198.0.0.1",
+        "201.0.0.0/29"
+      ]
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateIp": "false",
+      "whiteListIps": []
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateIp": "false",
+    "whiteListIps": []
+  }
+}

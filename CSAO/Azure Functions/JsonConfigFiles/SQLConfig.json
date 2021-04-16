@@ -1,0 +1,100 @@
+{
+  "enableRemediation": "true",
+  "allowAzureServiceIPRange": "0.0.0.0",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateAdvancedSecurity": "true",
+      "remediatePeriodicScans": "true",
+      "emailSubscriptionAdmins": "true",
+      "attachToControlVNet": "true",
+      "remediateAllowAzureServices": "true",
+      "allowAzureServices": "true",
+      "remediateIp": "true",
+      "whiteListIps": [],
+      "addADAdmin": "true",
+      "enableTDE": "true",
+      "remediateShortTermBackup": "true",
+      "remediateLongTermBackup": "true",
+      "remediateAuditing": "true",
+      "remediateConnectionType": "true",
+      "connectionType": "Proxy",
+      "remediateTLS": "true",
+      "minimumTLS": "1.2"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediateAdvancedSecurity": "false",
+      "remediatePeriodicScans": "false",
+      "emailSubscriptionAdmins": "false",
+      "attachToControlVNet": "false",
+      "remediateAllowAzureServices": "true",
+      "allowAzureServices": "false",
+      "remediateIp": "false",
+      "whiteListIps": [
+        {
+          "ruleName": "testfirst",
+          "startIP": "1.2.3.4",
+          "endIP": "5.6.7.8"
+        },
+        {
+          "ruleName": "testsecond",
+          "startIP": "1.3.3.4",
+          "endIP": "5.7.7.8"
+        }
+      ],
+      "addADAdmin": "false",
+      "enableTDE": "true",
+      "remediateShortTermBackup": "false",
+      "remediateLongTermBackup": "false",
+      "remediateAuditing": "false",
+      "remediateConnectionType": "false",
+      "connectionType": "Proxy",
+      "remediateTLS": "false",
+      "minimumTLS": "1.2"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediateAdvancedSecurity": "false",
+      "remediatePeriodicScans": "false",
+      "emailSubscriptionAdmins": "false",
+      "attachToControlVNet": "false",
+      "remediateAllowAzureServices": "false",
+      "allowAzureServices": "false",
+      "remediateIp": "false",
+      "whiteListIps": [],
+      "addADAdmin": "false",
+      "enableTDE": "true",
+      "remediateShortTermBackup": "false",
+      "remediateLongTermBackup": "false",
+      "remediateAuditing": "false",
+      "remediateConnectionType": "false",
+      "connectionType": "Proxy",
+      "remediateTLS": "false",
+      "minimumTLS": "1.2"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediateAdvancedSecurity": "false",
+    "remediatePeriodicScans": "false",
+    "emailSubscriptionAdmins": "false",
+    "attachToControlVNet": "false",
+    "remediateAllowAzureServices": "false",
+    "allowAzureServices": "false",
+    "remediateIp": "false",
+    "whiteListIps": [],
+    "addADAdmin": "false",
+    "enableTDE": "true",
+    "remediateShortTermBackup": "false",
+    "remediateLongTermBackup": "false",
+    "remediateAuditing": "false",
+    "remediateConnectionType": "true",
+    "connectionType": "Proxy",
+    "remediateTLS": "false",
+    "minimumTLS": "1.2"
+  }
+}

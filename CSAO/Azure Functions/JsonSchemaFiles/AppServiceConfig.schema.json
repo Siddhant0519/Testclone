@@ -1,0 +1,397 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "configuration",
+    "defaultConfig"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "httpsTrafficOnly",
+          "remediateTLS",
+          "minimumTLS",
+          "remediateFTPState",
+          "ftpState",
+          "remediateRemoteDebugging",
+          "remediateAlwaysOn",
+          "remediateStackVersion",
+          "remediateMainIp",
+          "remediateScmIp",
+          "copyMainIpConfigToScm",
+          "ipMainRuleList",
+          "ipScmRuleList",
+          "investigationRequired"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "httpsTrafficOnly": {
+            "$id": "#/properties/configuration/items/properties/httpsTrafficOnly",
+            "type": "string",
+            "title": "The httpsTrafficOnly schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateTLS": {
+            "$id": "#/properties/configuration/items/properties/remediateTLS",
+            "type": "string",
+            "title": "The remediateTLS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "minimumTLS": {
+            "$id": "#/properties/configuration/items/properties/minimumTLS",
+            "type": "string",
+            "title": "The minimumTLS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateFTPState": {
+            "$id": "#/properties/configuration/items/properties/remediateFTPState",
+            "type": "string",
+            "title": "The remediateFTPState schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "ftpState": {
+            "$id": "#/properties/configuration/items/properties/ftpState",
+            "type": "string",
+            "title": "The ftpState schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateRemoteDebugging": {
+            "$id": "#/properties/configuration/items/properties/remediateRemoteDebugging",
+            "type": "string",
+            "title": "The remediateRemoteDebugging schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateAlwaysOn": {
+            "$id": "#/properties/configuration/items/properties/remediateAlwaysOn",
+            "type": "string",
+            "title": "The remediateAlwaysOn schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateStackVersion": {
+            "$id": "#/properties/configuration/items/properties/remediateStackVersion",
+            "type": "string",
+            "title": "The remediateStackVersion schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateMainIp": {
+            "$id": "#/properties/configuration/items/properties/remediateMainIp",
+            "type": "string",
+            "title": "The remediateMainIp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateScmIp": {
+            "$id": "#/properties/configuration/items/properties/remediateScmIp",
+            "type": "string",
+            "title": "The remediateScmIp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "copyMainIpConfigToScm": {
+            "$id": "#/properties/configuration/items/properties/copyMainIpConfigToScm",
+            "type": "string",
+            "title": "The copyMainIpConfigToScm schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "ipMainRuleList": {
+            "$id": "#/properties/configuration/items/properties/ipMainRuleList",
+            "type": "array",
+            "title": "The ipMainRuleList schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+              "$id": "#/properties/configuration/items/properties/ipMainRuleList/items",
+              "type": "object",
+              "title": "The items schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "source",
+                "ruleName",
+                "priority",
+                "action"
+              ],
+              "additionalProperties": true,
+              "properties": {
+                "source": {
+                  "$id": "#/properties/configuration/items/properties/ipMainRuleList/items/properties/source",
+                  "type": "string",
+                  "title": "The source schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "ruleName": {
+                  "$id": "#/properties/configuration/items/properties/ipMainRuleList/items/properties/ruleName",
+                  "type": "string",
+                  "title": "The ruleName schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "priority": {
+                  "$id": "#/properties/configuration/items/properties/ipMainRuleList/items/properties/priority",
+                  "type": "string",
+                  "title": "The priority schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "action": {
+                  "$id": "#/properties/configuration/items/properties/ipMainRuleList/items/properties/action",
+                  "type": "string",
+                  "title": "The action schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              }
+            }
+          },
+          "ipScmRuleList": {
+            "$id": "#/properties/configuration/items/properties/ipScmRuleList",
+            "type": "array",
+            "title": "The ipScmRuleList schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+              "$id": "#/properties/configuration/items/properties/ipScmRuleList/items",
+              "type": "object",
+              "title": "The items schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "source",
+                "ruleName",
+                "priority",
+                "action"
+              ],
+              "additionalProperties": true,
+              "properties": {
+                "source": {
+                  "$id": "#/properties/configuration/items/properties/ipScmRuleList/items/properties/source",
+                  "type": "string",
+                  "title": "The source schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "ruleName": {
+                  "$id": "#/properties/configuration/items/properties/ipScmRuleList/items/properties/ruleName",
+                  "type": "string",
+                  "title": "The ruleName schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "priority": {
+                  "$id": "#/properties/configuration/items/properties/ipScmRuleList/items/properties/priority",
+                  "type": "string",
+                  "title": "The priority schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "action": {
+                  "$id": "#/properties/configuration/items/properties/ipScmRuleList/items/properties/action",
+                  "type": "string",
+                  "title": "The action schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              }
+            }
+          },
+          "investigationRequired": {
+            "$id": "#/properties/defaultConfig/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        }
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "httpsTrafficOnly",
+        "remediateTLS",
+        "minimumTLS",
+        "remediateFTPState",
+        "ftpState",
+        "remediateRemoteDebugging",
+        "remediateAlwaysOn",
+        "remediateStackVersion",
+        "remediateMainIp",
+        "remediateScmIp",
+        "copyMainIpConfigToScm",
+        "ipMainRuleList",
+        "ipScmRuleList",
+        "investigationRequired"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "httpsTrafficOnly": {
+          "$id": "#/properties/defaultConfig/properties/httpsTrafficOnly",
+          "type": "string",
+          "title": "The httpsTrafficOnly schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateTLS": {
+          "$id": "#/properties/defaultConfig/properties/remediateTLS",
+          "type": "string",
+          "title": "The remediateTLS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "minimumTLS": {
+          "$id": "#/properties/defaultConfig/properties/minimumTLS",
+          "type": "string",
+          "title": "The minimumTLS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateFTPState": {
+          "$id": "#/properties/defaultConfig/properties/remediateFTPState",
+          "type": "string",
+          "title": "The remediateFTPState schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "ftpState": {
+          "$id": "#/properties/defaultConfig/properties/ftpState",
+          "type": "string",
+          "title": "The ftpState schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateRemoteDebugging": {
+          "$id": "#/properties/defaultConfig/properties/remediateRemoteDebugging",
+          "type": "string",
+          "title": "The remediateRemoteDebugging schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateAlwaysOn": {
+          "$id": "#/properties/defaultConfig/properties/remediateAlwaysOn",
+          "type": "string",
+          "title": "The remediateAlwaysOn schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateStackVersion": {
+          "$id": "#/properties/defaultConfig/properties/remediateStackVersion",
+          "type": "string",
+          "title": "The remediateStackVersion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateMainIp": {
+          "$id": "#/properties/defaultConfig/properties/remediateMainIp",
+          "type": "string",
+          "title": "The remediateMainIp schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateScmIp": {
+          "$id": "#/properties/defaultConfig/properties/remediateScmIp",
+          "type": "string",
+          "title": "The remediateScmIp schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "copyMainIpConfigToScm": {
+          "$id": "#/properties/defaultConfig/properties/copyMainIpConfigToScm",
+          "type": "string",
+          "title": "The copyMainIpConfigToScm schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "ipMainRuleList": {
+          "$id": "#/properties/defaultConfig/properties/ipMainRuleList",
+          "type": "array",
+          "title": "The ipMainRuleList schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": []
+        },
+        "ipScmRuleList": {
+          "$id": "#/properties/defaultConfig/properties/ipScmRuleList",
+          "type": "array",
+          "title": "The ipScmRuleList schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": []
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    }
+  }
+}

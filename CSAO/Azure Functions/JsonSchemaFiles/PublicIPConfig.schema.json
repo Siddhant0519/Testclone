@@ -1,0 +1,140 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "loadbalancersubetid",
+    "vnetdetails",
+    "tags",
+    "defaultConfig"
+  ],
+  "properties": {
+    "loadbalancersubetid": {
+      "$id": "#/properties/loadbalancersubetid",
+      "type": "array",
+      "title": "The Loadbalancersubetid Schema"
+    },
+    "vnetdetails": {
+      "$id": "#/properties/vnetdetails",
+      "type": "object",
+      "title": "The Vnetdetails Schema",
+      "required": [
+        "vnetcidr",
+        "subnetcidr"
+      ],
+      "properties": {
+        "vnetcidr": {
+          "$id": "#/properties/vnetdetails/properties/vnetcidr",
+          "type": "string",
+          "title": "The Vnetcidr Schema",
+          "default": "",
+          "examples": [
+            "10.0.0.0/28"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "subnetcidr": {
+          "$id": "#/properties/vnetdetails/properties/subnetcidr",
+          "type": "string",
+          "title": "The Subnetcidr Schema",
+          "default": "",
+          "examples": [
+            "10.0.0.0/28"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "tags": {
+      "$id": "#/properties/tags",
+      "type": "array",
+      "title": "The Tags Schema",
+      "items": {
+        "$id": "#/properties/tags/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "tagName",
+          "configuration"
+        ],
+        "properties": {
+          "tagName": {
+            "$id": "#/properties/tags/items/properties/tagName",
+            "type": "string",
+            "title": "The Tagname Schema",
+            "default": "",
+            "examples": [
+              "env"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "configuration": {
+            "$id": "#/properties/tags/items/properties/configuration",
+            "type": "array",
+            "title": "The Configuration Schema",
+            "items": {
+              "$id": "#/properties/tags/items/properties/configuration/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "value",
+                "auditMode",
+                "remediationEnabled"
+              ],
+              "properties": {
+                "value": {
+                  "$id": "#/properties/tags/items/properties/configuration/items/properties/value",
+                  "type": "string",
+                  "title": "The Value Schema",
+                  "default": ""
+                },
+                "auditMode": {
+                  "$id": "#/properties/tags/items/properties/configuration/items/properties/auditMode",
+                  "type": "string",
+                  "title": "The auditMode Schema",
+                  "default": "",
+                  "enum": [ "true", "false" ]
+                },
+                "remediationEnabled": {
+                  "$id": "#/properties/tags/items/properties/configuration/items/properties/remediationEnabled",
+                  "type": "string",
+                  "title": "The Remediationenabled Schema",
+                  "default": "",
+                  "enum": [ "true", "false" ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The Defaultconfig Schema",
+      "required": [
+        "auditMode",
+        "remediationEnabled"
+      ],
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "enum": [ "true", "false" ]
+        },
+        "remediationEnabled": {
+          "$id": "#/properties/defaultConfig/properties/remediationEnabled",
+          "type": "string",
+          "title": "The Remediationenabled Schema",
+          "default": "",
+          "enum": [ "true", "false" ]
+        }
+      }
+    }
+  }
+}

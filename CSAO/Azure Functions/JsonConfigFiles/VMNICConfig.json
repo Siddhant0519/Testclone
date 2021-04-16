@@ -1,0 +1,24 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediatePublicIP": "true"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "remediatePublicIP": "false"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "remediatePublicIP": "false"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "remediatePublicIP": "false"
+  }
+}

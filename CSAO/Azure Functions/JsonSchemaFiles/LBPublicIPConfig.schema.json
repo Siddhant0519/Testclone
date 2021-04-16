@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "vnetdetails",
+    "configuration",
+    "defaultConfig"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "vnetdetails": {
+      "$id": "#/properties/vnetdetails",
+      "type": "object",
+      "title": "The vnetdetails schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "vnetcidr",
+        "subnetcidr"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "vnetcidr": {
+          "$id": "#/properties/vnetdetails/properties/vnetcidr",
+          "type": "string",
+          "title": "The vnetcidr schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "subnetcidr": {
+          "$id": "#/properties/vnetdetails/properties/subnetcidr",
+          "type": "string",
+          "title": "The subnetcidr schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "remediatePublicIP",
+          "investigationRequired"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediatePublicIP": {
+            "$id": "#/properties/configuration/items/properties/remediatePublicIP",
+            "type": "string",
+            "title": "The remediatePublicIP schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        }
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "remediatePublicIP",
+        "investigationRequired"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediatePublicIP": {
+          "$id": "#/properties/defaultConfig/properties/remediatePublicIP",
+          "type": "string",
+          "title": "The remediatePublicIP schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    }
+  }
+}

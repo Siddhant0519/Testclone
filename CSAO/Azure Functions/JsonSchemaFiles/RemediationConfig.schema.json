@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "ruleNameList"
+  ],
+  "properties": {
+    "ruleNameList": {
+      "$id": "#/properties/ruleNameList",
+      "type": "array",
+      "title": "The ruleNameList schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/ruleNameList/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "id",
+          "sendNotification",
+          "ruleName",
+          "displayName",
+          "subjectLine",
+          "bodyContent",
+          "description",
+          "auditDescription",
+          "HICF"
+        ],
+        "properties": {
+          "id": {
+            "$id": "#/properties/ruleNameList/items/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "sendNotification": {
+            "$id": "#/properties/ruleNameList/items/properties/sendNotification",
+            "type": "string",
+            "title": "The sendNotification schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "ruleName": {
+            "$id": "#/properties/ruleNameList/items/properties/ruleName",
+            "type": "string",
+            "title": "The ruleName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "displayName": {
+            "$id": "#/properties/ruleNameList/items/properties/displayName",
+            "type": "string",
+            "title": "The displayName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "subjectLine": {
+            "$id": "#/properties/ruleNameList/items/properties/subjectLine",
+            "type": "string",
+            "title": "The subjectLine schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "bodyContent": {
+            "$id": "#/properties/ruleNameList/items/properties/bodyContent",
+            "type": "string",
+            "title": "The bodyContent schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "description": {
+            "$id": "#/properties/ruleNameList/items/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditDescription": {
+            "$id": "#/properties/ruleNameList/items/properties/auditDescription",
+            "type": "string",
+            "title": "The auditDescription schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "HICF": {
+            "$id": "#/properties/ruleNameList/items/properties/HICF",
+            "type": "string",
+            "title": "The HICF schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

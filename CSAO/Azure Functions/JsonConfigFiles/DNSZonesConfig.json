@@ -1,0 +1,24 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "remediateVnetLinks": "true"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "false",
+      "remediateVnetLinks": "true"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "false",
+      "remediateVnetLinks": "true"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "false",
+    "remediateVnetLinks": "true"
+  }
+}

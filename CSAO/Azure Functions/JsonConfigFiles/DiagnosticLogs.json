@@ -1,0 +1,64 @@
+{
+  "enableRemediation": "true",
+  "serviceInScope": [
+    "microsoft.insights/diagnosticsettings",
+    "microsoft.datalakestore/accounts",
+    "microsoft.streamanalytics/streamingjobs",
+    "microsoft.eventhub/namespaces",
+    "microsoft.logic/workflows",
+    "microsoft.keyvault/vaults",
+    "microsoft.documentdb/databaseaccounts",
+    "microsoft.datafactory/factories",
+    "microsoft.sql/servers/databases",
+    "microsoft.devices/iothubs",
+    "microsoft.apimanagement/service",
+    "microsoft.dbforpostgresql/servers",
+    "microsoft.dbformysql/servers",
+    "microsoft.eventgrid/domains",
+    "microsoft.eventgrid/topics",
+    "microsoft.network/azurefirewalls",
+    "microsoft.network/virtualnetworks",
+    "microsoft.web/sites",
+    "microsoft.network/networksecuritygroups",
+    "microsoft.network/loadbalancers",
+    "microsoft.network/applicationgateways",
+    "microsoft.sql/managedinstances",
+    "microsoft.sql/managedinstances/databases",
+    "microsoft.analysisservices/servers",
+    "microsoft.cache/redis",
+    "microsoft.databricks/workspaces",
+    "microsoft.containerregistry/registries",
+    "microsoft.containerservice/managedclusters",
+    "microsoft.network/publicipaddresses",
+    "microsoft.healthcareapis/services",
+    "microsoft.cognitiveservices/accounts",
+    "microsoft.machinelearningservices/workspaces",
+    "microsoft.recoveryservices/vaults",
+    "microsoft.automation/automationaccounts",
+    "microsoft.azure/subscriptions",
+    "microsoft.servicebus/namespaces",
+    "microsoft.datalakeanalytics/accounts",
+    "microsoft.powerbidedicated/capacities"
+  ],
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "enableDiagnosticSetting": "true"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "enableDiagnosticSetting": "false"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "enableDiagnosticSetting": "false"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "false",
+    "enableDiagnosticSetting": "true"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "configuration",
+    "defaultConfig"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "httpsTrafficOnly",
+          "desCipher",
+          "http_2",
+          "clientSideTls_10",
+          "clientSideTls_11",
+          "clientSideSsl_30",
+          "backEndTls_10",
+          "backEndTls_11",
+          "backEndSsl_30",
+          "remediateVirtualNetwork",
+          "virtualNetworkType",
+          "investigationRequired"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "httpsTrafficOnly": {
+            "$id": "#/properties/configuration/items/properties/httpsTrafficOnly",
+            "type": "string",
+            "title": "The httpsTrafficOnly schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "desCipher": {
+            "$id": "#/properties/configuration/items/properties/desCipher",
+            "type": "string",
+            "title": "The desCipher schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "http_2": {
+            "$id": "#/properties/configuration/items/properties/http_2",
+            "type": "string",
+            "title": "The http_2 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "clientSideTls_10": {
+            "$id": "#/properties/configuration/items/properties/clientSideTls_10",
+            "type": "string",
+            "title": "The clientSideTls_10 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "clientSideTls_11": {
+            "$id": "#/properties/configuration/items/properties/clientSideTls_11",
+            "type": "string",
+            "title": "The clientSideTls_11 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "clientSideSsl_30": {
+            "$id": "#/properties/configuration/items/properties/clientSideSsl_30",
+            "type": "string",
+            "title": "The clientSideSsl_30 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "backEndTls_10": {
+            "$id": "#/properties/configuration/items/properties/backEndTls_10",
+            "type": "string",
+            "title": "The backEndTls_10 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "backEndTls_11": {
+            "$id": "#/properties/configuration/items/properties/backEndTls_11",
+            "type": "string",
+            "title": "The backEndTls_11 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "backEndSsl_30": {
+            "$id": "#/properties/configuration/items/properties/backEndSsl_30",
+            "type": "string",
+            "title": "The backEndSsl_30 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateVirtualNetwork": {
+            "$id": "#/properties/configuration/items/properties/remediateVirtualNetwork",
+            "type": "string",
+            "title": "The remediateVirtualNetwork schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "virtualNetworkType": {
+            "$id": "#/properties/configuration/items/properties/virtualNetworkType",
+            "type": "string",
+            "title": "The virtualNetworkType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        }
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "httpsTrafficOnly",
+        "desCipher",
+        "http_2",
+        "clientSideTls_10",
+        "clientSideTls_11",
+        "clientSideSsl_30",
+        "backEndTls_10",
+        "backEndTls_11",
+        "backEndSsl_30",
+        "remediateVirtualNetwork",
+        "virtualNetworkType",
+        "investigationRequired"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "httpsTrafficOnly": {
+          "$id": "#/properties/defaultConfig/properties/httpsTrafficOnly",
+          "type": "string",
+          "title": "The httpsTrafficOnly schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "desCipher": {
+          "$id": "#/properties/defaultConfig/properties/desCipher",
+          "type": "string",
+          "title": "The desCipher schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "http_2": {
+          "$id": "#/properties/defaultConfig/properties/http_2",
+          "type": "string",
+          "title": "The http_2 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "clientSideTls_10": {
+          "$id": "#/properties/defaultConfig/properties/clientSideTls_10",
+          "type": "string",
+          "title": "The clientSideTls_10 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "clientSideTls_11": {
+          "$id": "#/properties/defaultConfig/properties/clientSideTls_11",
+          "type": "string",
+          "title": "The clientSideTls_11 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "clientSideSsl_30": {
+          "$id": "#/properties/defaultConfig/properties/clientSideSsl_30",
+          "type": "string",
+          "title": "The clientSideSsl_30 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "backEndTls_10": {
+          "$id": "#/properties/defaultConfig/properties/backEndTls_10",
+          "type": "string",
+          "title": "The backEndTls_10 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "backEndTls_11": {
+          "$id": "#/properties/defaultConfig/properties/backEndTls_11",
+          "type": "string",
+          "title": "The backEndTls_11 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "backEndSsl_30": {
+          "$id": "#/properties/defaultConfig/properties/backEndSsl_30",
+          "type": "string",
+          "title": "The backEndSsl_30 schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateVirtualNetwork": {
+          "$id": "#/properties/defaultConfig/properties/remediateVirtualNetwork",
+          "type": "string",
+          "title": "The remediateVirtualNetwork schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "virtualNetworkType": {
+          "$id": "#/properties/defaultConfig/properties/virtualNetworkType",
+          "type": "string",
+          "title": "The virtualNetworkType schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    }
+  }
+}

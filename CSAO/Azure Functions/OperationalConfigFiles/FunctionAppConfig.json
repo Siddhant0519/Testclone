@@ -1,0 +1,184 @@
+{
+  "functionApps": [
+    {
+      "id": "ADMonitor",
+      "name": "rfadevADMonitor",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "AnalysisServices",
+      "name": "dtdevAnalysisServices",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "APIManagement",
+      "name": "rfadevAPIManagement",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "AppGateway",
+      "name": "rfadevAppGateway",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "AppService",
+      "name": "rfadevAppService",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "ContainerRegistry",
+      "name": "dtdevcontainerregistry",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "Cosmos",
+      "name": "rfadevCosmos",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "DataLakeGen1",
+      "name": "rfadevDataLakeGen1",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "Diagnostics",
+      "name": "rfadevDiagnostics",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "EventGrid",
+      "name": "rfadevEventGrid",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "EventHub",
+      "name": "rfadevEventHub",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "EventSub",
+      "name": "rfadevEventSub",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "JsonConfig",
+      "name": "rfadevJsonConfig",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "KeyVault",
+      "name": "rfadevKeyVault",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "KubernetesService",
+      "name": "dtdevkubernetesmonitor",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "LogicApp",
+      "name": "rfadevLogicApp",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "MySQL",
+      "name": "rfadevMySQL",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "Network",
+      "name": "rfadevNetwork",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "QueueReader",
+      "name": "rfadevQueueReader",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "PostgreSQL",
+      "name": "rfadevPostgreSQL",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "RemediationLog",
+      "name": "rfadevRemediationLog",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "SecurityCenter",
+      "name": "rfadevSecurityCenter",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "SQLServer",
+      "name": "rfadevSQLServer",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "SQLManagedInstance",
+      "name": "rfadevSQLManagedInstance",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "DNSZones",
+      "name": "dtdevdnszones",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "Storage",
+      "name": "rfadevStorage",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "SubscriptionMonitor",
+      "name": "DeloitteSubscription",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "StorageLogCronJob",
+      "name": "dtdevStorageLogCronJob",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "StreamLogToDataLake",
+      "name": "dtdevstoragelogstreamtodatalake",
+      "functionKey": "",
+      "resourceURI": ""
+    },
+    {
+      "id": "GuardrailsHealthCheck",
+      "name": "dtdevGuardrailsHealthCheck",
+      "functionKey": "",
+      "resourceURI": ""
+    }
+  ]
+}

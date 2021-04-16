@@ -1,0 +1,75 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "enableRemediation",
+    "readerMode",
+    "b2bUsersAllowed",
+    "b2cUsersAllowed",
+    "SPNAllowed",
+    "whitelistedMembers",
+    "investigationRequired"
+  ],
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation Schema",
+      "default": "",
+      "enum": [ "true", "false" ]
+    },
+    "readerMode": {
+      "$id": "#/properties/readerMode",
+      "type": "string",
+      "title": "The readerMode Schema",
+      "default": "",
+      "enum": [ "true", "false" ]
+    },
+    "b2bUsersAllowed": {
+      "$id": "#/properties/b2bUsersAllowed",
+      "type": "string",
+      "title": "The B2busersallowed Schema",
+      "default": "",
+      "enum": [ "true", "false" ]
+    },
+    "b2cUsersAllowed": {
+      "$id": "#/properties/b2cUsersAllowed",
+      "type": "string",
+      "title": "The B2cusersallowed Schema",
+      "default": "",
+      "enum": [ "true", "false" ]
+    },
+    "SPNAllowed": {
+      "$id": "#/properties/SPNAllowed",
+      "type": "string",
+      "title": "The Spnallowed Schema",
+      "default": "",
+      "enum": [ "true", "false" ]
+    },
+    "whitelistedMembers": {
+      "$id": "#/properties/whitelistedMembers",
+      "type": "array",
+      "title": "The Whitelistedmembers Schema",
+      "items": {
+        "$id": "#/properties/whitelistedMembers/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "nayparekh@deloitte.com"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "investigationRequired": {
+      "$id": "#/properties/investigationRequired",
+      "type": "string",
+      "title": "The investigationRequired Schema",
+      "default": "",
+      "enum": [ "true", "false" ]
+    }
+  }
+}

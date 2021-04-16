@@ -1,0 +1,369 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "configuration",
+    "defaultConfig"
+  ],
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "remediateContainerAccessPolicy",
+          "containerAccessPolicy",
+          "httpsTrafficOnly",
+          "enableSelectedNetwork",
+          "remediateAllowAzureServices",
+          "allowAzureServices",
+          "remediateTLS",
+          "minimumTLS",
+          "remediateIp",
+          "whiteListIps",
+          "remediateDiagnosticSettings",
+          "remediateDiagnosticRetentionDays",
+          "diagnosticRetentionDays",
+          "diagnosticLoggingVersion",
+          "remediateFileSoftDelete",
+          "fileSoftDelete",
+          "fileRetentionDays",
+          "investigationRequired"
+        ],
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateContainerAccessPolicy": {
+            "$id": "#/properties/configuration/items/properties/remediateContainerAccessPolicy",
+            "type": "string",
+            "title": "The remediateContainerAccessPolicy schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "containerAccessPolicy": {
+            "$id": "#/properties/configuration/items/properties/containerAccessPolicy",
+            "type": "string",
+            "title": "The containerAccessPolicy schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "httpsTrafficOnly": {
+            "$id": "#/properties/configuration/items/properties/httpsTrafficOnly",
+            "type": "string",
+            "title": "The httpsTrafficOnly schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "enableSelectedNetwork": {
+            "$id": "#/properties/configuration/items/properties/enableSelectedNetwork",
+            "type": "string",
+            "title": "The enableSelectedNetwork schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateAllowAzureServices": {
+            "$id": "#/properties/configuration/items/properties/remediateAllowAzureServices",
+            "type": "string",
+            "title": "The remediateAllowAzureServices schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "allowAzureServices": {
+            "$id": "#/properties/configuration/items/properties/allowAzureServices",
+            "type": "string",
+            "title": "The allowAzureServices schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateTLS": {
+            "$id": "#/properties/configuration/items/properties/remediateTLS",
+            "type": "string",
+            "title": "The remediateTLS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "minimumTLS": {
+            "$id": "#/properties/configuration/items/properties/minimumTLS",
+            "type": "string",
+            "title": "The minimumTLS schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateIp": {
+            "$id": "#/properties/configuration/items/properties/remediateIp",
+            "type": "string",
+            "title": "The remediateIp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "whiteListIps": {
+            "$id": "#/properties/configuration/items/properties/whiteListIps",
+            "type": "array",
+            "title": "The whiteListIps schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true
+          },
+          "remediateDiagnosticSettings": {
+            "$id": "#/properties/configuration/items/properties/remediateDiagnosticSettings",
+            "type": "string",
+            "title": "The remediateDiagnosticSettings schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateDiagnosticRetentionDays": {
+            "$id": "#/properties/configuration/items/properties/remediateDiagnosticRetentionDays",
+            "type": "string",
+            "title": "The remediateDiagnosticRetentionDays schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "diagnosticRetentionDays": {
+            "$id": "#/properties/configuration/items/properties/diagnosticRetentionDays",
+            "type": "string",
+            "title": "The diagnosticRetentionDays schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "diagnosticLoggingVersion": {
+            "$id": "#/properties/configuration/items/properties/diagnosticLoggingVersion",
+            "type": "string",
+            "title": "The diagnosticLoggingVersion schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateFileSoftDelete": {
+            "$id": "#/properties/configuration/items/properties/remediateFileSoftDelete",
+            "type": "string",
+            "title": "The remediateFileSoftDelete schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "fileSoftDelete": {
+            "$id": "#/properties/configuration/items/properties/fileSoftDelete",
+            "type": "string",
+            "title": "The fileSoftDelete schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "fileRetentionDays": {
+            "$id": "#/properties/configuration/items/properties/fileRetentionDays",
+            "type": "string",
+            "title": "The fileRetentionDays schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "remediateContainerAccessPolicy",
+        "containerAccessPolicy",
+        "httpsTrafficOnly",
+        "enableSelectedNetwork",
+        "remediateAllowAzureServices",
+        "allowAzureServices",
+        "remediateTLS",
+        "minimumTLS",
+        "remediateIp",
+        "whiteListIps",
+        "remediateDiagnosticSettings",
+        "remediateDiagnosticRetentionDays",
+        "diagnosticRetentionDays",
+        "diagnosticLoggingVersion",
+        "remediateFileSoftDelete",
+        "fileSoftDelete",
+        "fileRetentionDays",
+        "investigationRequired"
+      ],
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateContainerAccessPolicy": {
+          "$id": "#/properties/defaultConfig/properties/remediateContainerAccessPolicy",
+          "type": "string",
+          "title": "The remediateContainerAccessPolicy schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "containerAccessPolicy": {
+          "$id": "#/properties/defaultConfig/properties/containerAccessPolicy",
+          "type": "string",
+          "title": "The containerAccessPolicy schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "httpsTrafficOnly": {
+          "$id": "#/properties/defaultConfig/properties/httpsTrafficOnly",
+          "type": "string",
+          "title": "The httpsTrafficOnly schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "enableSelectedNetwork": {
+          "$id": "#/properties/defaultConfig/properties/enableSelectedNetwork",
+          "type": "string",
+          "title": "The enableSelectedNetwork schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateAllowAzureServices": {
+          "$id": "#/properties/defaultConfig/properties/remediateAllowAzureServices",
+          "type": "string",
+          "title": "The remediateAllowAzureServices schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "allowAzureServices": {
+          "$id": "#/properties/defaultConfig/properties/allowAzureServices",
+          "type": "string",
+          "title": "The allowAzureServices schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateTLS": {
+          "$id": "#/properties/defaultConfig/properties/remediateTLS",
+          "type": "string",
+          "title": "The remediateTLS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "minimumTLS": {
+          "$id": "#/properties/defaultConfig/properties/minimumTLS",
+          "type": "string",
+          "title": "The minimumTLS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateIp": {
+          "$id": "#/properties/defaultConfig/properties/remediateIp",
+          "type": "string",
+          "title": "The remediateIp schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "whiteListIps": {
+          "$id": "#/properties/defaultConfig/properties/whiteListIps",
+          "type": "array",
+          "title": "The whiteListIps schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        },
+        "remediateDiagnosticSettings": {
+          "$id": "#/properties/defaultConfig/properties/remediateDiagnosticSettings",
+          "type": "string",
+          "title": "The remediateDiagnosticSettings schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateDiagnosticRetentionDays": {
+          "$id": "#/properties/defaultConfig/properties/remediateDiagnosticRetentionDays",
+          "type": "string",
+          "title": "The remediateDiagnosticRetentionDays schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "diagnosticRetentionDays": {
+          "$id": "#/properties/defaultConfig/properties/diagnosticRetentionDays",
+          "type": "string",
+          "title": "The diagnosticRetentionDays schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "diagnosticLoggingVersion": {
+          "$id": "#/properties/defaultConfig/properties/diagnosticLoggingVersion",
+          "type": "string",
+          "title": "The diagnosticLoggingVersion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateFileSoftDelete": {
+          "$id": "#/properties/defaultConfig/properties/remediateFileSoftDelete",
+          "type": "string",
+          "title": "The remediateFileSoftDelete schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "fileSoftDelete": {
+          "$id": "#/properties/defaultConfig/properties/fileSoftDelete",
+          "type": "string",
+          "title": "The fileSoftDelete schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "fileRetentionDays": {
+          "$id": "#/properties/defaultConfig/properties/fileRetentionDays",
+          "type": "string",
+          "title": "The fileRetentionDays schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

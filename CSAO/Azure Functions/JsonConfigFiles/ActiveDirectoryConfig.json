@@ -1,0 +1,8 @@
+{
+	"enableRemediation": "false",
+	"readerMode": "true",
+	"b2bUsersAllowed": "true",
+	"b2cUsersAllowed": "true",
+	"SPNAllowed": "true",
+	"whitelistedMembers": []
+}

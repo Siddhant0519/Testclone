@@ -1,0 +1,207 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "configuration",
+    "defaultConfig"
+  ],
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "remediateHttps",
+          "remedaiteWAF",
+          "enableFirewall",
+          "remediateFirewallMode",
+          "remediateRuleSet",
+          "remediateFrontendIpConfigurations",
+          "prefixFrontendIpName",
+          "investigationRequired"
+        ],
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateHttps": {
+            "$id": "#/properties/configuration/items/properties/remediateHttps",
+            "type": "string",
+            "title": "The remediateHttps schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remedaiteWAF": {
+            "$id": "#/properties/configuration/items/properties/remedaiteWAF",
+            "type": "string",
+            "title": "The remedaiteWAF schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "enableFirewall": {
+            "$id": "#/properties/configuration/items/properties/enableFirewall",
+            "type": "string",
+            "title": "The enableFirewall schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateFirewallMode": {
+            "$id": "#/properties/configuration/items/properties/remediateFirewallMode",
+            "type": "string",
+            "title": "The remediateFirewallMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateRuleSet": {
+            "$id": "#/properties/configuration/items/properties/remediateRuleSet",
+            "type": "string",
+            "title": "The remediateRuleSet schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateFrontendIpConfigurations": {
+            "$id": "#/properties/configuration/items/properties/remediateFrontendIpConfigurations",
+            "type": "string",
+            "title": "The remediateFrontendIpConfigurations schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "prefixFrontendIpName": {
+            "$id": "#/properties/configuration/items/properties/prefixFrontendIpName",
+            "type": "string",
+            "title": "The prefixFrontendIpName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "remediateHttps",
+        "remedaiteWAF",
+        "enableFirewall",
+        "remediateFirewallMode",
+        "remediateRuleSet",
+        "remediateFrontendIpConfigurations",
+        "prefixFrontendIpName",
+        "investigationRequired"
+      ],
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateHttps": {
+          "$id": "#/properties/defaultConfig/properties/remediateHttps",
+          "type": "string",
+          "title": "The remediateHttps schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remedaiteWAF": {
+          "$id": "#/properties/defaultConfig/properties/remedaiteWAF",
+          "type": "string",
+          "title": "The remedaiteWAF schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "enableFirewall": {
+          "$id": "#/properties/defaultConfig/properties/enableFirewall",
+          "type": "string",
+          "title": "The enableFirewall schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateFirewallMode": {
+          "$id": "#/properties/defaultConfig/properties/remediateFirewallMode",
+          "type": "string",
+          "title": "The remediateFirewallMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateRuleSet": {
+          "$id": "#/properties/defaultConfig/properties/remediateRuleSet",
+          "type": "string",
+          "title": "The remediateRuleSet schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateFrontendIpConfigurations": {
+          "$id": "#/properties/defaultConfig/properties/remediateFrontendIpConfigurations",
+          "type": "string",
+          "title": "The remediateFrontendIpConfigurations schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "prefixFrontendIpName": {
+          "$id": "#/properties/defaultConfig/properties/prefixFrontendIpName",
+          "type": "string",
+          "title": "The prefixFrontendIpName schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

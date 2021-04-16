@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "configuration",
+    "defaultConfig"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "remediateBackup",
+          "remediateFirewall",
+          "remediatePowerBIService",
+          "allowPowerBIService",
+          "remediateIp",
+          "whiteListIps",
+          "investigationRequired"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateBackup": {
+            "$id": "#/properties/configuration/items/properties/remediateBackup",
+            "type": "string",
+            "title": "The remediateBackup schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateFirewall": {
+            "$id": "#/properties/configuration/items/properties/remediateFirewall",
+            "type": "string",
+            "title": "The remediateFirewall schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediatePowerBIService": {
+            "$id": "#/properties/configuration/items/properties/remediatePowerBIService",
+            "type": "string",
+            "title": "The remediatePowerBIService schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "allowPowerBIService": {
+            "$id": "#/properties/configuration/items/properties/allowPowerBIService",
+            "type": "string",
+            "title": "The allowPowerBIService schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "remediateIp": {
+            "$id": "#/properties/configuration/items/properties/remediateIp",
+            "type": "string",
+            "title": "The remediateIp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "whiteListIps": {
+            "$id": "#/properties/configuration/items/properties/whiteListIps",
+            "type": "array",
+            "title": "The whiteListIps schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": []
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "string",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        }
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "remediateBackup",
+        "remediateFirewall",
+        "remediatePowerBIService",
+        "allowPowerBIService",
+        "remediateIp",
+        "whiteListIps",
+        "investigationRequired"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateBackup": {
+          "$id": "#/properties/defaultConfig/properties/remediateBackup",
+          "type": "string",
+          "title": "The remediateBackup schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateFirewall": {
+          "$id": "#/properties/defaultConfig/properties/remediateFirewall",
+          "type": "string",
+          "title": "The remediateFirewall schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediatePowerBIService": {
+          "$id": "#/properties/defaultConfig/properties/remediatePowerBIService",
+          "type": "string",
+          "title": "The remediatePowerBIService schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "allowPowerBIService": {
+          "$id": "#/properties/defaultConfig/properties/allowPowerBIService",
+          "type": "string",
+          "title": "The allowPowerBIService schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediateIp": {
+          "$id": "#/properties/defaultConfig/properties/remediateIp",
+          "type": "string",
+          "title": "The remediateIp schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "whiteListIps": {
+          "$id": "#/properties/defaultConfig/properties/whiteListIps",
+          "type": "array",
+          "title": "The whiteListIps schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": []
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "string",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        }
+      }
+    }
+  }
+}

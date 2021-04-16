@@ -1,0 +1,55 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "enableSelectedNetwork": "true",
+      "remediateAllowAzureServices": "true",
+      "allowAzureServices": "true",
+      "retentionDays": "60",
+      "remediateIp": "true",
+      "whiteListIps": [],
+      "enableSoftDelete": "true",
+      "recoverKeyVault": "true"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "enableSelectedNetwork": "false",
+      "remediateAllowAzureServices": "true",
+      "allowAzureServices": "false",
+      "retentionDays": "30",
+      "remediateIp": "false",
+      "whiteListIps": [
+        "198.0.0.1",
+        "201.0.0.0/29"
+      ],
+      "enableSoftDelete": "false",
+      "recoverKeyVault": "false"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "enableSelectedNetwork": "false",
+      "remediateAllowAzureServices": "false",
+      "allowAzureServices": "false",
+      "retentionDays": "10",
+      "remediateIp": "false",
+      "whiteListIps": [],
+      "enableSoftDelete": "false",
+      "recoverKeyVault": "false"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "enableSelectedNetwork": "false",
+    "remediateAllowAzureServices": "false",
+    "allowAzureServices": "false",
+    "retentionDays": "15",
+    "remediateIp": "false",
+    "whiteListIps": [],
+    "enableSoftDelete": "false",
+    "recoverKeyVault": "false"
+  }
+}

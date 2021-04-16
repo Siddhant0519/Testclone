@@ -1,0 +1,1525 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "appGateway",
+    "anaylsisService",
+    "appService",
+    "diagnostics",
+    "sqlManagedInstance",
+    "sql",
+    "postgreSql",
+    "mySQL",
+    "dnsZones",
+    "securityCenter",
+    "controlVnet",
+    "nsgFlowLogs",
+    "virtualMachine",
+    "generalSetting"
+  ],
+  "properties": {
+    "appGateway": {
+      "$id": "#/properties/appGateway",
+      "type": "object",
+      "title": "The appGateway schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "sslcert",
+        "firewall"
+      ],
+      "properties": {
+        "sslcert": {
+          "$id": "#/properties/appGateway/properties/sslcert",
+          "type": "object",
+          "title": "The sslcert schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "msi",
+            "kvcerturi"
+          ],
+          "properties": {
+            "msi": {
+              "$id": "#/properties/appGateway/properties/sslcert/properties/msi",
+              "type": "string",
+              "title": "The msi schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "kvcerturi": {
+              "$id": "#/properties/appGateway/properties/sslcert/properties/kvcerturi",
+              "type": "string",
+              "title": "The kvcerturi schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        },
+        "firewall": {
+          "$id": "#/properties/appGateway/properties/firewall",
+          "type": "object",
+          "title": "The firewall schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "mode",
+            "ruleSetType",
+            "ruleSetVersion"
+          ],
+          "properties": {
+            "mode": {
+              "$id": "#/properties/appGateway/properties/firewall/properties/mode",
+              "type": "string",
+              "title": "The mode schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "ruleSetType": {
+              "$id": "#/properties/appGateway/properties/firewall/properties/ruleSetType",
+              "type": "string",
+              "title": "The ruleSetType schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "ruleSetVersion": {
+              "$id": "#/properties/appGateway/properties/firewall/properties/ruleSetVersion",
+              "type": "string",
+              "title": "The ruleSetVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "anaylsisService": {
+      "$id": "#/properties/anaylsisService",
+      "type": "object",
+      "title": "The anaylsisService schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "BackupSettings"
+      ],
+      "properties": {
+        "BackupSettings": {
+          "$id": "#/properties/anaylsisService/properties/BackupSettings",
+          "type": "object",
+          "title": "The BackupSettings schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "storageAccount"
+          ],
+          "properties": {
+            "storageAccount": {
+              "$id": "#/properties/anaylsisService/properties/BackupSettings/properties/storageAccount",
+              "type": "object",
+              "title": "The storageAccount schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "$id": "#/properties/anaylsisService/properties/BackupSettings/properties/storageAccount/properties/id",
+                  "type": "string",
+                  "title": "The id schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "appService": {
+      "$id": "#/properties/appService",
+      "type": "object",
+      "title": "The appService schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "stackVersion"
+      ],
+      "properties": {
+        "stackVersion": {
+          "$id": "#/properties/appService/properties/stackVersion",
+          "type": "object",
+          "title": "The stackVersion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "linuxFxVersion",
+            "netFrameworkVersion",
+            "phpVersion",
+            "pythonVersion",
+            "javaVersion",
+            "javaContainer",
+            "javaContainerVersion"
+          ],
+          "properties": {
+            "linuxFxVersion": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion",
+              "type": "object",
+              "title": "The linuxFxVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "ruby",
+                "node",
+                "php",
+                "dotnetcore",
+                "java",
+                "python",
+                "staticsite"
+              ],
+              "properties": {
+                "ruby": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/ruby",
+                  "type": "string",
+                  "title": "The ruby schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "node": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/node",
+                  "type": "string",
+                  "title": "The node schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "php": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/php",
+                  "type": "string",
+                  "title": "The php schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "dotnetcore": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/dotnetcore",
+                  "type": "string",
+                  "title": "The dotnetcore schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "java": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/java",
+                  "type": "string",
+                  "title": "The java schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "python": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/python",
+                  "type": "string",
+                  "title": "The python schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "staticsite": {
+                  "$id": "#/properties/appService/properties/stackVersion/properties/linuxFxVersion/properties/staticsite",
+                  "type": "string",
+                  "title": "The staticsite schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              },
+              "additionalProperties": true
+            },
+            "netFrameworkVersion": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/netFrameworkVersion",
+              "type": "string",
+              "title": "The netFrameworkVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "phpVersion": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/phpVersion",
+              "type": "string",
+              "title": "The phpVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "pythonVersion": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/pythonVersion",
+              "type": "string",
+              "title": "The pythonVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "javaVersion": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/javaVersion",
+              "type": "string",
+              "title": "The javaVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "javaContainer": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/javaContainer",
+              "type": "string",
+              "title": "The javaContainer schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "javaContainerVersion": {
+              "$id": "#/properties/appService/properties/stackVersion/properties/javaContainerVersion",
+              "type": "string",
+              "title": "The javaContainerVersion schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "diagnostics": {
+      "$id": "#/properties/diagnostics",
+      "type": "object",
+      "title": "The diagnostics schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "logAnalyticsWorkspace",
+        "eventHub"
+      ],
+      "properties": {
+        "logAnalyticsWorkspace": {
+          "$id": "#/properties/diagnostics/properties/logAnalyticsWorkspace",
+          "type": "array",
+          "title": "The logAnalyticsWorkspace schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/diagnostics/properties/logAnalyticsWorkspace/items",
+            "type": "object",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+              "region",
+              "workspaceId"
+            ],
+            "properties": {
+              "region": {
+                "$id": "#/properties/diagnostics/properties/logAnalyticsWorkspace/items/properties/region",
+                "type": "string",
+                "title": "The region schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "workspaceId": {
+                "$id": "#/properties/diagnostics/properties/logAnalyticsWorkspace/items/properties/workspaceId",
+                "type": "string",
+                "title": "The workspaceId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "eventHub": {
+          "$id": "#/properties/diagnostics/properties/eventHub",
+          "type": "array",
+          "title": "The eventHub schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/diagnostics/properties/eventHub/items",
+            "type": "object",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+              "region",
+              "namespaceId",
+              "eventHubName",
+              "authorizationKeyName"
+            ],
+            "properties": {
+              "region": {
+                "$id": "#/properties/diagnostics/properties/eventHub/items/properties/region",
+                "type": "string",
+                "title": "The region schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "namespaceId": {
+                "$id": "#/properties/diagnostics/properties/eventHub/items/properties/namespaceId",
+                "type": "string",
+                "title": "The namespaceId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "eventHubName": {
+                "$id": "#/properties/diagnostics/properties/eventHub/items/properties/eventHubName",
+                "type": "string",
+                "title": "The eventHubName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "authorizationKeyName": {
+                "$id": "#/properties/diagnostics/properties/eventHub/items/properties/authorizationKeyName",
+                "type": "string",
+                "title": "The authorizationKeyName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "sqlManagedInstance": {
+      "$id": "#/properties/sqlManagedInstance",
+      "type": "object",
+      "title": "The sqlManagedInstance schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "backupRetentionDays",
+        "VulnerabilityAssessmentSettings",
+        "AdvancedThreatProtection"
+      ],
+      "properties": {
+        "backupRetentionDays": {
+          "$id": "#/properties/sqlManagedInstance/properties/backupRetentionDays",
+          "type": "string",
+          "title": "The backupRetentionDays schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "VulnerabilityAssessmentSettings": {
+          "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings",
+          "type": "object",
+          "title": "The VulnerabilityAssessmentSettings schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "storageAccounts",
+            "ScanReportEmails"
+          ],
+          "properties": {
+            "storageAccounts": {
+              "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/storageAccounts",
+              "type": "array",
+              "title": "The storageAccounts schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": [],
+              "additionalItems": true,
+              "items": {
+                "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items",
+                "type": "object",
+                "title": "The items schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "required": [
+                  "subscriptionId",
+                  "resourceGroup",
+                  "region",
+                  "name"
+                ],
+                "properties": {
+                  "subscriptionId": {
+                    "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/subscriptionId",
+                    "type": "string",
+                    "title": "The subscriptionId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "resourceGroup": {
+                    "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/resourceGroup",
+                    "type": "string",
+                    "title": "The resourceGroup schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "region": {
+                    "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/region",
+                    "type": "string",
+                    "title": "The region schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "name": {
+                    "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  }
+                },
+                "additionalProperties": true
+              }
+            },
+            "ScanReportEmails": {
+              "$id": "#/properties/sqlManagedInstance/properties/VulnerabilityAssessmentSettings/properties/ScanReportEmails",
+              "type": "string",
+              "title": "The ScanReportEmails schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        },
+        "AdvancedThreatProtection": {
+          "$id": "#/properties/sqlManagedInstance/properties/AdvancedThreatProtection",
+          "type": "object",
+          "title": "The AdvancedThreatProtection schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "ScanReportEmails"
+          ],
+          "properties": {
+            "ScanReportEmails": {
+              "$id": "#/properties/sqlManagedInstance/properties/AdvancedThreatProtection/properties/ScanReportEmails",
+              "type": "string",
+              "title": "The ScanReportEmails schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "sql": {
+      "$id": "#/properties/sql",
+      "type": "object",
+      "title": "The sql schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "VulnerabilityAssessmentSettings",
+        "AdvancedThreatProtection",
+        "sqlAdmin",
+        "backupSettings"
+      ],
+      "properties": {
+        "VulnerabilityAssessmentSettings": {
+          "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings",
+          "type": "object",
+          "title": "The VulnerabilityAssessmentSettings schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "storageAccounts",
+            "ScanReportEmails"
+          ],
+          "properties": {
+            "storageAccounts": {
+              "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/storageAccounts",
+              "type": "array",
+              "title": "The storageAccounts schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": [],
+              "additionalItems": true,
+              "items": {
+                "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items",
+                "type": "object",
+                "title": "The items schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "required": [
+                  "subscriptionId",
+                  "resourceGroup",
+                  "region",
+                  "name"
+                ],
+                "properties": {
+                  "subscriptionId": {
+                    "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/subscriptionId",
+                    "type": "string",
+                    "title": "The subscriptionId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "resourceGroup": {
+                    "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/resourceGroup",
+                    "type": "string",
+                    "title": "The resourceGroup schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "region": {
+                    "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/region",
+                    "type": "string",
+                    "title": "The region schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "name": {
+                    "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/storageAccounts/items/properties/name",
+                    "type": "string",
+                    "title": "The name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  }
+                },
+                "additionalProperties": true
+              }
+            },
+            "ScanReportEmails": {
+              "$id": "#/properties/sql/properties/VulnerabilityAssessmentSettings/properties/ScanReportEmails",
+              "type": "string",
+              "title": "The ScanReportEmails schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        },
+        "AdvancedThreatProtection": {
+          "$id": "#/properties/sql/properties/AdvancedThreatProtection",
+          "type": "object",
+          "title": "The AdvancedThreatProtection schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "ScanReportEmails"
+          ],
+          "properties": {
+            "ScanReportEmails": {
+              "$id": "#/properties/sql/properties/AdvancedThreatProtection/properties/ScanReportEmails",
+              "type": "string",
+              "title": "The ScanReportEmails schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        },
+        "sqlAdmin": {
+          "$id": "#/properties/sql/properties/sqlAdmin",
+          "type": "object",
+          "title": "The sqlAdmin schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "properties"
+          ],
+          "properties": {
+            "properties": {
+              "$id": "#/properties/sql/properties/sqlAdmin/properties/properties",
+              "type": "object",
+              "title": "The properties schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "administratorType",
+                "login",
+                "sid",
+                "tenantId"
+              ],
+              "properties": {
+                "administratorType": {
+                  "$id": "#/properties/sql/properties/sqlAdmin/properties/properties/properties/administratorType",
+                  "type": "string",
+                  "title": "The administratorType schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "login": {
+                  "$id": "#/properties/sql/properties/sqlAdmin/properties/properties/properties/login",
+                  "type": "string",
+                  "title": "The login schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "sid": {
+                  "$id": "#/properties/sql/properties/sqlAdmin/properties/properties/properties/sid",
+                  "type": "string",
+                  "title": "The sid schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "tenantId": {
+                  "$id": "#/properties/sql/properties/sqlAdmin/properties/properties/properties/tenantId",
+                  "type": "string",
+                  "title": "The tenantId schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "backupSettings": {
+          "$id": "#/properties/sql/properties/backupSettings",
+          "type": "object",
+          "title": "The backupSettings schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "shorttermretentionDays",
+            "longtermretentionDays"
+          ],
+          "properties": {
+            "shorttermretentionDays": {
+              "$id": "#/properties/sql/properties/backupSettings/properties/shorttermretentionDays",
+              "type": "string",
+              "title": "The shorttermretentionDays schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "longtermretentionDays": {
+              "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays",
+              "type": "object",
+              "title": "The longtermretentionDays schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "weeklyBackup",
+                "monthlyBackup",
+                "yearlyBackup",
+                "weekoftheYear"
+              ],
+              "properties": {
+                "weeklyBackup": {
+                  "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/weeklyBackup",
+                  "type": "object",
+                  "title": "The weeklyBackup schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "required": [
+                    "enable",
+                    "periodType",
+                    "retentionValue"
+                  ],
+                  "properties": {
+                    "enable": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/weeklyBackup/properties/enable",
+                      "type": "string",
+                      "title": "The enable schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "periodType": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/weeklyBackup/properties/periodType",
+                      "type": "string",
+                      "title": "The periodType schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "retentionValue": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/weeklyBackup/properties/retentionValue",
+                      "type": "string",
+                      "title": "The retentionValue schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  },
+                  "additionalProperties": true
+                },
+                "monthlyBackup": {
+                  "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/monthlyBackup",
+                  "type": "object",
+                  "title": "The monthlyBackup schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "required": [
+                    "enable",
+                    "periodType",
+                    "retentionValue"
+                  ],
+                  "properties": {
+                    "enable": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/monthlyBackup/properties/enable",
+                      "type": "string",
+                      "title": "The enable schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "periodType": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/monthlyBackup/properties/periodType",
+                      "type": "string",
+                      "title": "The periodType schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "retentionValue": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/monthlyBackup/properties/retentionValue",
+                      "type": "string",
+                      "title": "The retentionValue schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  },
+                  "additionalProperties": true
+                },
+                "yearlyBackup": {
+                  "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/yearlyBackup",
+                  "type": "object",
+                  "title": "The yearlyBackup schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "required": [
+                    "enable",
+                    "periodType",
+                    "retentionValue"
+                  ],
+                  "properties": {
+                    "enable": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/yearlyBackup/properties/enable",
+                      "type": "string",
+                      "title": "The enable schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "periodType": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/yearlyBackup/properties/periodType",
+                      "type": "string",
+                      "title": "The periodType schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "retentionValue": {
+                      "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/yearlyBackup/properties/retentionValue",
+                      "type": "string",
+                      "title": "The retentionValue schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  },
+                  "additionalProperties": true
+                },
+                "weekoftheYear": {
+                  "$id": "#/properties/sql/properties/backupSettings/properties/longtermretentionDays/properties/weekoftheYear",
+                  "type": "string",
+                  "title": "The weekoftheYear schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "postgreSql": {
+      "$id": "#/properties/postgreSql",
+      "type": "object",
+      "title": "The postgreSql schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "sqlAdmin"
+      ],
+      "properties": {
+        "sqlAdmin": {
+          "$id": "#/properties/postgreSql/properties/sqlAdmin",
+          "type": "object",
+          "title": "The sqlAdmin schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "properties"
+          ],
+          "properties": {
+            "properties": {
+              "$id": "#/properties/postgreSql/properties/sqlAdmin/properties/properties",
+              "type": "object",
+              "title": "The properties schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "administratorType",
+                "login",
+                "sid",
+                "tenantId"
+              ],
+              "properties": {
+                "administratorType": {
+                  "$id": "#/properties/postgreSql/properties/sqlAdmin/properties/properties/properties/administratorType",
+                  "type": "string",
+                  "title": "The administratorType schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "login": {
+                  "$id": "#/properties/postgreSql/properties/sqlAdmin/properties/properties/properties/login",
+                  "type": "string",
+                  "title": "The login schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "sid": {
+                  "$id": "#/properties/postgreSql/properties/sqlAdmin/properties/properties/properties/sid",
+                  "type": "string",
+                  "title": "The sid schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "tenantId": {
+                  "$id": "#/properties/postgreSql/properties/sqlAdmin/properties/properties/properties/tenantId",
+                  "type": "string",
+                  "title": "The tenantId schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "mySQL": {
+      "$id": "#/properties/mySQL",
+      "type": "object",
+      "title": "The mySQL schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "sqlAdmin"
+      ],
+      "properties": {
+        "sqlAdmin": {
+          "$id": "#/properties/mySQL/properties/sqlAdmin",
+          "type": "object",
+          "title": "The sqlAdmin schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "properties"
+          ],
+          "properties": {
+            "properties": {
+              "$id": "#/properties/mySQL/properties/sqlAdmin/properties/properties",
+              "type": "object",
+              "title": "The properties schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "required": [
+                "administratorType",
+                "login",
+                "sid",
+                "tenantId"
+              ],
+              "properties": {
+                "administratorType": {
+                  "$id": "#/properties/mySQL/properties/sqlAdmin/properties/properties/properties/administratorType",
+                  "type": "string",
+                  "title": "The administratorType schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "login": {
+                  "$id": "#/properties/mySQL/properties/sqlAdmin/properties/properties/properties/login",
+                  "type": "string",
+                  "title": "The login schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "sid": {
+                  "$id": "#/properties/mySQL/properties/sqlAdmin/properties/properties/properties/sid",
+                  "type": "string",
+                  "title": "The sid schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "tenantId": {
+                  "$id": "#/properties/mySQL/properties/sqlAdmin/properties/properties/properties/tenantId",
+                  "type": "string",
+                  "title": "The tenantId schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "dnsZones": {
+      "$id": "#/properties/dnsZones",
+      "type": "object",
+      "title": "The dnsZones schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "subscriptionFilter",
+        "subscriptions",
+        "whitelistzones"
+      ],
+      "properties": {
+        "subscriptionFilter": {
+          "$id": "#/properties/dnsZones/properties/subscriptionFilter",
+          "type": "string",
+          "title": "The subscriptionFilter schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "subscriptions": {
+          "$id": "#/properties/dnsZones/properties/subscriptions",
+          "type": "array",
+          "title": "The subscriptions schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        },
+        "whitelistzones": {
+          "$id": "#/properties/dnsZones/properties/whitelistzones",
+          "type": "array",
+          "title": "The whitelistzones schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "securityCenter": {
+      "$id": "#/properties/securityCenter",
+      "type": "object",
+      "title": "The securityCenter schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "enableRemediation",
+        "subscriptions"
+      ],
+      "properties": {
+        "enableRemediation": {
+          "$id": "#/properties/securityCenter/properties/enableRemediation",
+          "type": "string",
+          "title": "The enableRemediation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "subscriptions": {
+          "$id": "#/properties/securityCenter/properties/subscriptions",
+          "type": "array",
+          "title": "The subscriptions schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/securityCenter/properties/subscriptions/items",
+            "type": "object",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+              "id",
+              "auditMode",
+              "email",
+              "phone",
+              "alertNotifications",
+              "alertsToAdmins",
+              "autoProvisoning",
+              "virtualMachines",
+              "sqlServers",
+              "appServices",
+              "storageAccounts",
+              "sqlServerVirtualMachines",
+              "kubernetesService",
+              "containerRegistry",
+              "keyVaults",
+              "defaultWorkspaceid",
+              "investigationRequired"
+            ],
+            "properties": {
+              "id": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/id",
+                "type": "string",
+                "title": "The id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "auditMode": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/auditMode",
+                "type": "string",
+                "title": "The auditMode schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "email": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/email",
+                "type": "string",
+                "title": "The email schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "phone": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/phone",
+                "type": "string",
+                "title": "The phone schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "alertNotifications": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/alertNotifications",
+                "type": "string",
+                "title": "The alertNotifications schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "alertsToAdmins": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/alertsToAdmins",
+                "type": "string",
+                "title": "The alertsToAdmins schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "autoProvisoning": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/autoProvisoning",
+                "type": "string",
+                "title": "The autoProvisoning schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "virtualMachines": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/virtualMachines",
+                "type": "string",
+                "title": "The virtualMachines schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "sqlServers": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/sqlServers",
+                "type": "string",
+                "title": "The sqlServers schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "appServices": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/appServices",
+                "type": "string",
+                "title": "The appServices schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "storageAccounts": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/storageAccounts",
+                "type": "string",
+                "title": "The storageAccounts schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "sqlServerVirtualMachines": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/sqlServerVirtualMachines",
+                "type": "string",
+                "title": "The sqlServerVirtualMachines schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "kubernetesService": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/kubernetesService",
+                "type": "string",
+                "title": "The kubernetesService schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "containerRegistry": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/containerRegistry",
+                "type": "string",
+                "title": "The containerRegistry schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "keyVaults": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/keyVaults",
+                "type": "string",
+                "title": "The keyVaults schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "defaultWorkspaceid": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/defaultWorkspaceid",
+                "type": "string",
+                "title": "The defaultWorkspaceid schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "investigationRequired": {
+                "$id": "#/properties/securityCenter/properties/subscriptions/items/properties/investigationRequired",
+                "type": "string",
+                "title": "The investigationRequired schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "controlVnet": {
+      "$id": "#/properties/controlVnet",
+      "type": "object",
+      "title": "The controlVnet schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "virtualNetworks"
+      ],
+      "properties": {
+        "virtualNetworks": {
+          "$id": "#/properties/controlVnet/properties/virtualNetworks",
+          "type": "array",
+          "title": "The virtualNetworks schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "nsgFlowLogs": {
+      "$id": "#/properties/nsgFlowLogs",
+      "type": "object",
+      "title": "The nsgFlowLogs schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "storageAccount"
+      ],
+      "properties": {
+        "storageAccount": {
+          "$id": "#/properties/nsgFlowLogs/properties/storageAccount",
+          "type": "array",
+          "title": "The storageAccount schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/nsgFlowLogs/properties/storageAccount/items",
+            "type": "object",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+              "region",
+              "id"
+            ],
+            "properties": {
+              "region": {
+                "$id": "#/properties/nsgFlowLogs/properties/storageAccount/items/properties/region",
+                "type": "string",
+                "title": "The region schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "id": {
+                "$id": "#/properties/nsgFlowLogs/properties/storageAccount/items/properties/id",
+                "type": "string",
+                "title": "The id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "virtualMachine": {
+      "$id": "#/properties/virtualMachine",
+      "type": "object",
+      "title": "The virtualMachine schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "storageAccount"
+      ],
+      "properties": {
+        "storageAccount": {
+          "$id": "#/properties/virtualMachine/properties/storageAccount",
+          "type": "array",
+          "title": "The storageAccount schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "generalSetting": {
+      "$id": "#/properties/generalSetting",
+      "type": "object",
+      "title": "The generalSetting schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "storageLogStreamBatchSize",
+        "controlVNetCIDR",
+        "currentVersion",
+        "resourceTagName",
+        "contactTagName",
+        "includeNewSubscription",
+        "retryCount",
+        "retryDelayInSeconds",
+        "subscriptionMonitorCronJob",
+        "eventHubKeysCronJob",
+        "activeDirectoryCronJob",
+        "guardrailsHealthCheckCronJob",
+        "storageLogCronJob",
+        "queueReaderIntervalInMinutes",
+        "kbArticleBaseURL",
+        "emailAPIURL",
+        "emailAPIKey",
+        "remediationLogDesitnation",
+        "diagnosticsLogDesitnation",
+        "databricksRgRegex",
+        "databricksTags"
+      ],
+      "properties": {
+        "storageLogStreamBatchSize": {
+          "$id": "#/properties/generalSetting/properties/storageLogStreamBatchSize",
+          "type": "string",
+          "title": "The storageLogStreamBatchSize schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "controlVNetCIDR": {
+          "$id": "#/properties/generalSetting/properties/controlVNetCIDR",
+          "type": "string",
+          "title": "The controlVNetCIDR schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "currentVersion": {
+          "$id": "#/properties/generalSetting/properties/currentVersion",
+          "type": "string",
+          "title": "The currentVersion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "resourceTagName": {
+          "$id": "#/properties/generalSetting/properties/resourceTagName",
+          "type": "string",
+          "title": "The resourceTagName schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "contactTagName": {
+          "$id": "#/properties/generalSetting/properties/contactTagName",
+          "type": "string",
+          "title": "The contactTagName schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "includeNewSubscription": {
+          "$id": "#/properties/generalSetting/properties/includeNewSubscription",
+          "type": "string",
+          "title": "The includeNewSubscription schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "retryCount": {
+          "$id": "#/properties/generalSetting/properties/retryCount",
+          "type": "integer",
+          "title": "The retryCount schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0
+        },
+        "retryDelayInSeconds": {
+          "$id": "#/properties/generalSetting/properties/retryDelayInSeconds",
+          "type": "integer",
+          "title": "The retryDelayInSeconds schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0
+        },
+        "subscriptionMonitorCronJob": {
+          "$id": "#/properties/generalSetting/properties/subscriptionMonitorCronJob",
+          "type": "string",
+          "title": "The subscriptionMonitorCronJob schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "eventHubKeysCronJob": {
+          "$id": "#/properties/generalSetting/properties/eventHubKeysCronJob",
+          "type": "string",
+          "title": "The eventHubKeysCronJob schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "activeDirectoryCronJob": {
+          "$id": "#/properties/generalSetting/properties/activeDirectoryCronJob",
+          "type": "string",
+          "title": "The activeDirectoryCronJob schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "guardrailsHealthCheckCronJob": {
+          "$id": "#/properties/generalSetting/properties/guardrailsHealthCheckCronJob",
+          "type": "string",
+          "title": "The guardrailsHealthCheckCronJob schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "storageLogCronJob": {
+          "$id": "#/properties/generalSetting/properties/storageLogCronJob",
+          "type": "string",
+          "title": "The storageLogCronJob schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "queueReaderIntervalInMinutes": {
+          "$id": "#/properties/generalSetting/properties/queueReaderIntervalInMinutes",
+          "type": "string",
+          "title": "The queueReaderIntervalInMinutes schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "kbArticleBaseURL": {
+          "$id": "#/properties/generalSetting/properties/kbArticleBaseURL",
+          "type": "string",
+          "title": "The kbArticleBaseURL schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "emailAPIURL": {
+          "$id": "#/properties/generalSetting/properties/emailAPIURL",
+          "type": "string",
+          "title": "The emailAPIURL schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "emailAPIKey": {
+          "$id": "#/properties/generalSetting/properties/emailAPIKey",
+          "type": "string",
+          "title": "The emailAPIKey schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "remediationLogDesitnation": {
+          "$id": "#/properties/generalSetting/properties/remediationLogDesitnation",
+          "type": "object",
+          "title": "The remediationLogDesitnation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "cosmosDB",
+            "appInsights"
+          ],
+          "properties": {
+            "cosmosDB": {
+              "$id": "#/properties/generalSetting/properties/remediationLogDesitnation/properties/cosmosDB",
+              "type": "string",
+              "title": "The cosmosDB schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "appInsights": {
+              "$id": "#/properties/generalSetting/properties/remediationLogDesitnation/properties/appInsights",
+              "type": "string",
+              "title": "The appInsights schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        },
+        "diagnosticsLogDesitnation": {
+          "$id": "#/properties/generalSetting/properties/diagnosticsLogDesitnation",
+          "type": "object",
+          "title": "The diagnosticsLogDesitnation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "required": [
+            "LogAnalytics",
+            "EventHub"
+          ],
+          "properties": {
+            "LogAnalytics": {
+              "$id": "#/properties/generalSetting/properties/diagnosticsLogDesitnation/properties/LogAnalytics",
+              "type": "string",
+              "title": "The LogAnalytics schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "EventHub": {
+              "$id": "#/properties/generalSetting/properties/diagnosticsLogDesitnation/properties/EventHub",
+              "type": "string",
+              "title": "The EventHub schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          },
+          "additionalProperties": true
+        },
+        "databricksRgRegex": {
+          "$id": "#/properties/generalSetting/properties/databricksRgRegex",
+          "type": "string",
+          "title": "The databricksRgRegex schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "databricksTags": {
+          "$id": "#/properties/generalSetting/properties/databricksTags",
+          "type": "array",
+          "title": "The databricksTags schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/generalSetting/properties/databricksTags/items",
+            "type": "object",
+            "title": "The items schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+              "tagName",
+              "tagValue"
+            ],
+            "properties": {
+              "tagName": {
+                "$id": "#/properties/generalSetting/properties/databricksTags/items/properties/tagName",
+                "type": "string",
+                "title": "The tagName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "tagValue": {
+                "$id": "#/properties/generalSetting/properties/databricksTags/items/properties/tagValue",
+                "type": "string",
+                "title": "The tagValue schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

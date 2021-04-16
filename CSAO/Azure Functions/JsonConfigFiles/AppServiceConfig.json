@@ -1,0 +1,86 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "httpsTrafficOnly": "true",
+      "remediateTLS": "true",
+      "minimumTLS": "1.0",
+      "remediateFTPState": "true",
+      "ftpState": "FtpsOnly",
+      "remediateRemoteDebugging": "true",
+      "remediateAlwaysOn": "true",
+      "remediateStackVersion": "true",
+      "remediateMainIp": "true",
+      "remediateScmIp": "true",
+      "copyMainIpConfigToScm": "false",
+      "ipMainRuleList": [
+        {
+          "source": "10.23.2.3/12",
+          "ruleName": "testRule1",
+          "priority": "110",
+          "action": "allow"
+        }
+      ],
+      "ipScmRuleList": [
+        {
+          "source": "10.0.0.0/32",
+          "ruleName": "testRule1",
+          "priority": "110",
+          "action": "allow"
+        }
+      ]
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "httpsTrafficOnly": "true",
+      "remediateTLS": "true",
+      "minimumTLS": "1.1",
+      "remediateFTPState": "true",
+      "ftpState": "Disabled",
+      "remediateRemoteDebugging": "false",
+      "remediateAlwaysOn": "false",
+      "remediateStackVersion": "false",
+      "remediateMainIp": "true",
+      "remediateScmIp": "true",
+      "copyMainIpConfigToScm": "false",
+      "ipMainRuleList": [],
+      "ipScmRuleList": []
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "httpsTrafficOnly": "false",
+      "remediateTLS": "false",
+      "minimumTLS": "1.2",
+      "remediateFTPState": "true",
+      "ftpState": "AllAllowed",
+      "remediateRemoteDebugging": "false",
+      "remediateAlwaysOn": "false",
+      "remediateStackVersion": "false",
+      "remediateMainIp": "false",
+      "remediateScmIp": "false",
+      "copyMainIpConfigToScm": "false",
+      "ipMainRuleList": [],
+      "ipScmRuleList": []
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "httpsTrafficOnly": "true",
+    "remediateTLS": "false",
+    "minimumTLS": "1.2",
+    "remediateFTPState": "false",
+    "ftpState": "AllAllowed",
+    "remediateRemoteDebugging": "false",
+    "remediateAlwaysOn": "false",
+    "remediateStackVersion": "false",
+    "remediateMainIp": "false",
+    "remediateScmIp": "false",
+    "copyMainIpConfigToScm": "false",
+    "ipMainRuleList": [],
+    "ipScmRuleList": []
+  }
+}

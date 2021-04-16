@@ -1,0 +1,8 @@
+{
+	"targetDataLake": {
+		"enableLogStream": "true",
+		"subscriptionId": "",
+		"resourceGroup": "RemediationRG",
+		"name": "streamdatalakestrgen2"
+	}
+}

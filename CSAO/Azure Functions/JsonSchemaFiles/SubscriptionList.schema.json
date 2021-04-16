@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "includedSubscriptions",
+    "excludedSubscriptions",
+    "exemptedSubscriptions"
+  ],
+  "properties": {
+    "includedSubscriptions": {
+      "$id": "#/properties/includedSubscriptions",
+      "type": "array",
+      "title": "The Includedsubscriptions Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/includedSubscriptions/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": ""
+      }
+    },
+    "excludedSubscriptions": {
+      "$id": "#/properties/excludedSubscriptions",
+      "type": "array",
+      "title": "The Excludedsubscriptions Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/excludedSubscriptions/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": ""
+      }
+    },
+    "exemptedSubscriptions": {
+      "$id": "#/properties/exemptedSubscriptions",
+      "type": "array",
+      "title": "The Exemptedsubscriptions Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/exemptedSubscriptions/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": ""
+      }
+    }
+  }
+}

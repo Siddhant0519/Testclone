@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "enableRemediation",
+    "configuration",
+    "defaultConfig"
+  ],
+  "properties": {
+    "enableRemediation": {
+      "$id": "#/properties/enableRemediation",
+      "type": "string",
+      "title": "The enableRemediation schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "configuration": {
+      "$id": "#/properties/configuration",
+      "type": "array",
+      "title": "The configuration schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/configuration/items",
+        "type": "object",
+        "title": "The items schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "required": [
+          "tagValue",
+          "auditMode",
+          "flowLogsEnabled",
+          "allowedInboundRules",
+          "allowedOutboundRules",
+          "investigationRequired"
+        ],
+        "properties": {
+          "tagValue": {
+            "$id": "#/properties/configuration/items/properties/tagValue",
+            "type": "string",
+            "title": "The tagValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "auditMode": {
+            "$id": "#/properties/configuration/items/properties/auditMode",
+            "type": "string",
+            "title": "The auditMode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "flowLogsEnabled": {
+            "$id": "#/properties/configuration/items/properties/flowLogsEnabled",
+            "type": "string",
+            "title": "The flowLogsEnabled schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "allowedInboundRules": {
+            "$id": "#/properties/configuration/items/properties/allowedInboundRules",
+            "type": "array",
+            "title": "The allowedInboundRules schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true
+          },
+          "allowedOutboundRules": {
+            "$id": "#/properties/configuration/items/properties/allowedOutboundRules",
+            "type": "array",
+            "title": "The allowedOutboundRules schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true
+          },
+          "investigationRequired": {
+            "$id": "#/properties/configuration/items/properties/investigationRequired",
+            "type": "array",
+            "title": "The investigationRequired schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "defaultConfig": {
+      "$id": "#/properties/defaultConfig",
+      "type": "object",
+      "title": "The defaultConfig schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "required": [
+        "auditMode",
+        "flowLogsEnabled",
+        "allowedInboundRules",
+        "allowedOutboundRules",
+        "investigationRequired"
+      ],
+      "properties": {
+        "auditMode": {
+          "$id": "#/properties/defaultConfig/properties/auditMode",
+          "type": "string",
+          "title": "The auditMode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "flowLogsEnabled": {
+          "$id": "#/properties/defaultConfig/properties/flowLogsEnabled",
+          "type": "string",
+          "title": "The flowLogsEnabled schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "allowedInboundRules": {
+          "$id": "#/properties/defaultConfig/properties/allowedInboundRules",
+          "type": "array",
+          "title": "The allowedInboundRules schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        },
+        "allowedOutboundRules": {
+          "$id": "#/properties/defaultConfig/properties/allowedOutboundRules",
+          "type": "array",
+          "title": "The allowedOutboundRules schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        },
+        "investigationRequired": {
+          "$id": "#/properties/defaultConfig/properties/investigationRequired",
+          "type": "array",
+          "title": "The investigationRequired schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "additionalItems": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

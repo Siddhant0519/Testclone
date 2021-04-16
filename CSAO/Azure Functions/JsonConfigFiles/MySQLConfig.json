@@ -1,0 +1,84 @@
+{
+  "enableRemediation": "true",
+  "allowAzureServiceIPRange": "0.0.0.0",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "attachToControlVNet": "true",
+      "remediateAllowAzureServices": "true",
+      "allowAzureServices": "true",
+      "remediateIp": "true",
+      "whiteListIps": [],
+      "addADAdmin": "true",
+      "remediateRetentionDays": "true",
+      "retentionDays": "15",
+      "remediateAuditing": "true",
+      "remediateSSL": "true",
+      "sslValue": "Enabled",
+      "remediateTLS": "true",
+      "minimumTLS": "TLS1_1"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "attachToControlVNet": "false",
+      "remediateAllowAzureServices": "true",
+      "allowAzureServices": "false",
+      "remediateIp": "false",
+      "whiteListIps": [
+        {
+          "ruleName": "testfirst",
+          "startIP": "1.2.3.4",
+          "endIP": "5.6.7.8"
+        },
+        {
+          "ruleName": "testsecond",
+          "startIP": "1.3.3.4",
+          "endIP": "5.7.7.8"
+        }
+      ],
+      "addADAdmin": "false",
+      "remediateRetentionDays": "false",
+      "retentionDays": "10",
+      "remediateAuditing": "false",
+      "remediateSSL": "false",
+      "sslValue": "Disabled",
+      "remediateTLS": "false",
+      "minimumTLS": "TLS1_1"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "attachToControlVNet": "false",
+      "remediateAllowAzureServices": "false",
+      "allowAzureServices": "false",
+      "remediateIp": "false",
+      "whiteListIps": [],
+      "addADAdmin": "false",
+      "remediateRetentionDays": "false",
+      "retentionDays": "11",
+      "remediateAuditing": "false",
+      "remediateSSL": "false",
+      "sslValue": "Disabled",
+      "remediateTLS": "false",
+      "minimumTLS": "TLS1_1"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "attachToControlVNet": "false",
+    "remediateAllowAzureServices": "false",
+    "allowAzureServices": "false",
+    "remediateIp": "false",
+    "whiteListIps": [],
+    "addADAdmin": "false",
+    "remediateRetentionDays": "false",
+    "retentionDays": "30",
+    "remediateAuditing": "true",
+    "remediateSSL": "false",
+    "sslValue": "Disabled",
+    "remediateTLS": "false",
+    "minimumTLS": "TLS1_1"
+  }
+}

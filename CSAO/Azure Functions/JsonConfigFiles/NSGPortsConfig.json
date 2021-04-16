@@ -1,0 +1,103 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "flowLogsEnabled": "true",
+      "allowedInboundRules": [
+        {
+          "sourcePort": "*",
+          "destinationPort": "80",
+          "sourceAddress": "*",
+          "destinationAddress": "*",
+          "operation": "whitelist"
+        }
+      ],
+      "allowedOutboundRules": [
+        {
+          "sourcePort": "any",
+          "destinationPort": "any",
+          "sourceAddress": "any",
+          "destinationAddress": "any",
+          "operation": "whitelist"
+        }
+      ]
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "flowLogsEnabled": "false",
+      "allowedInboundRules": [
+        {
+          "sourcePort": "90,91",
+          "destinationPort": "80",
+          "sourceAddress": "10.1.1.1,10.2.2.2",
+          "destinationAddress": "VirtualNetwork",
+          "operation": "blacklist"
+        },
+        {
+          "sourcePort": "90,91,92",
+          "destinationPort": "80,8080",
+          "sourceAddress": "10.1.1.1,10.2.2.2",
+          "destinationAddress": "101.1.1.1,101.2.2.2",
+          "operation": "blacklist"
+        }
+      ],
+      "allowedOutboundRules": [
+        {
+          "sourcePort": "any",
+          "destinationPort": "any",
+          "sourceAddress": "any",
+          "destinationAddress": "any",
+          "operation": "whitelist"
+        }
+      ]
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "flowLogsEnabled": "false",
+      "allowedInboundRules": [
+        {
+          "sourcePort": "*",
+          "destinationPort": "*",
+          "sourceAddress": "*",
+          "destinationAddress": "*",
+          "operation": "whitelist"
+        }
+      ],
+      "allowedOutboundRules": [
+        {
+          "sourcePort": "any",
+          "destinationPort": "any",
+          "sourceAddress": "any",
+          "destinationAddress": "any",
+          "operation": "whitelist"
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "flowLogsEnabled": "false",
+    "allowedInboundRules": [
+      {
+        "sourcePort": "*",
+        "destinationPort": "*",
+        "sourceAddress": "*",
+        "destinationAddress": "*",
+        "operation": "whitelist"
+      }
+    ],
+    "allowedOutboundRules": [
+      {
+        "sourcePort": "any",
+        "destinationPort": "any",
+        "sourceAddress": "any",
+        "destinationAddress": "any",
+        "operation": "whitelist"
+      }
+    ]
+  }
+}

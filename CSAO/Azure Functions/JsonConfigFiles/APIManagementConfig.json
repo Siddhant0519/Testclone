@@ -1,0 +1,64 @@
+{
+  "enableRemediation": "true",
+  "configuration": [
+    {
+      "tagValue": "prod",
+      "auditMode": "false",
+      "httpsTrafficOnly": "true",
+      "desCipher": "true",
+      "http_2": "true",
+      "clientSideTls_10": "true",
+      "clientSideTls_11": "true",
+      "clientSideSsl_30": "true",
+      "backEndTls_10": "true",
+      "backEndTls_11": "true",
+      "backEndSsl_30": "true",
+      "remediateVirtualNetwork": "true",
+      "virtualNetworkType": "Internal"
+    },
+    {
+      "tagValue": "nonprod",
+      "auditMode": "true",
+      "httpsTrafficOnly": "false",
+      "desCipher": "false",
+      "http_2": "true",
+      "clientSideTls_10": "false",
+      "clientSideTls_11": "false",
+      "clientSideSsl_30": "true",
+      "backEndTls_10": "false",
+      "backEndTls_11": "false",
+      "backEndSsl_30": "true",
+      "remediateVirtualNetwork": "true",
+      "virtualNetworkType": "External"
+    },
+    {
+      "tagValue": "monitoring",
+      "auditMode": "true",
+      "httpsTrafficOnly": "false",
+      "desCipher": "false",
+      "http_2": "false",
+      "clientSideTls_10": "false",
+      "clientSideTls_11": "false",
+      "clientSideSsl_30": "false",
+      "backEndTls_10": "false",
+      "backEndTls_11": "false",
+      "backEndSsl_30": "false",
+      "remediateVirtualNetwork": "true",
+      "virtualNetworkType": "Internal"
+    }
+  ],
+  "defaultConfig": {
+    "auditMode": "true",
+    "httpsTrafficOnly": "false",
+    "desCipher": "false",
+    "http_2": "false",
+    "clientSideTls_10": "false",
+    "clientSideTls_11": "false",
+    "clientSideSsl_30": "false",
+    "backEndTls_10": "false",
+    "backEndTls_11": "false",
+    "backEndSsl_30": "false",
+    "remediateVirtualNetwork": "true",
+    "virtualNetworkType": "Internal"
+  }
+}
